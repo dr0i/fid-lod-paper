@@ -7,7 +7,7 @@ This article reflects the ["Richtlinien für das DFG geförderte System der Fach
 ----------------
     
 Deutsch:
-# LOD als Vehikel zum Aufbau einer nachhaltigen FID-Metadadateninfrastruktur
+# LOD als Vehikel zum Aufbau einer nachhaltigen FID-Metadateninfrastruktur
 Autoren: Pascal Christoph und Adrian Pohl
 ## Abstract
 Dieser Artikel reflektiert die [Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaf](http://www.dfg.de/formulare/12_102/12_102_de.pdf ) und zeigt dabei auf, wie Linked Open Data (LOD) beim Umbau der Sondersammelgebiete (SSG) zu Fachinformationsdiensten (FID) helfen kann. Es wird dabei insbesondere auf den Aspekt (Meta-)Dateninfrastruktur, eingegangen. Die These dieses Artikels ist, dass LOD prädestiniert ist, die Basis einer nachhaltigen Metadateninfrastruktur zu bilden.
@@ -15,22 +15,34 @@ Dieser Artikel reflektiert die [Richtlinien für das DFG geförderte System der 
 Pascal Christoph kennt ViFas und SSGs aus seiner Arbeit von 2008-2010 am [hbz](http://www.hbz-nrw.de/) als technischer Umsetzer des Projekts "[vascoda](http://de.wikipedia.org/wiki/Vascoda)". Seit 2010 arbeitet er am Linked Open Data Dienst ["lobid.org"](http://lobid.org) des hbz .
 Adrian Pohl beschäftigt sich seit 2009 mit LOD im hbz und hat insbesondere lobid.org mitaufgebaut. Er koordiniert die Open Knowledge Foundation (OKFN) Working Group on Open Bibliographic Data. {TODO}
 
+\tableofcontents 
+
 ## Inhaltsverzeichnis
 [Einführung](#Einführung)
-[Definition LOD](#Definition LOD)
-[Hintergrund: Erfahrungen aus vascoda](#Hintergrund: Erfahrungen aus vascoda)
-[Aufgabenumsetzung](#Aufgabenumsetzung)
-[Cooperare necesse est](#Cooperare necesse est)
-[Manifesto](#Manifesto)
-[Metadatenmapping, Datentransformation und automatische Datenanreicherung](#Metadatenmapping, Datentransformation und automatische Datenanreicherung)
-[Hubs zur intellektuellen Datenanreicherung](#Hubs zur intellektuellen Datenanreicherung)
-[Aufbau von Rechercheindizes und Web-APIs](#Aufbau von Rechercheindizes und Web-APIs)
-[Datenprozesskette](#Datenprozesskette)
-[Grundlegendes Desiderat an FIDs](#Grundlegendes Desiderat an FIDs)
-[Fazit](#Fazit)
-[Referenzen](#Referenzen)
 
-[Einführung
+[Definition LOD](#Definition LOD)
+
+[Hintergrund: Erfahrungen aus vascoda](#Hintergrund: Erfahrungen aus vascoda)
+
+[Aufgabenumsetzung](#Aufgabenumsetzung)
+
+[Cooperare necesse est](#Cooperare necesse est)
+
+[Manifesto](#Manifesto)
+
+[Metadatenmapping, Datentransformation und automatische Datenanreicherung](#Metadatenmapping, Datentransformation und automatische Datenanreicherung)
+
+[Hubs zur intellektuellen Datenanreicherung](#Hubs zur intellektuellen Datenanreicherung)
+
+[Aufbau von Rechercheindizes und Web-APIs](#Aufbau von Rechercheindizes und Web-APIs)
+
+[Datenprozesskette](#Datenprozesskette)
+
+[Grundlegendes Desiderat an FIDs](#Grundlegendes Desiderat an FIDs)
+
+[Fazit](#Fazit)
+
+[Referenzen](#Referenzen)
 
 # Einführung
 Die Bedürfnisse der Wissenschaftler stehen im Fokus der DFG-Richtlinien, deren Bedürfnisse haben FIDs zu befriedigen. Die These dieses Artikels ist, dass LOD eine ideale Basis liefert, um genau diesen Bedürfnissen gerecht zu werden.
@@ -127,12 +139,12 @@ Neben der sog. "weißen Literatur" gibt es "graue Literatur", also alles das, wa
 Eine Sammlung fachrelevanter Ressourcen zu betreiben erfordert eine Menge an intellektueller Arbeit. Besonders im Bereich der grauen Literatur, die teilweise gar nicht erschlossen oder nur mit unzureichenden Metadaten ausgestattet ist, ist deshalb der Einsatz von sog. Crowdsourcing[n](https://de.wikipedia.org/wiki/Crowdsourcing) unverzichtbar, vor allem durch die regelrechte "Wissensexplosion" dieser Ressourcen durch die Entwicklung des Internets. Denn der Nutzer steht nicht einfach vor einer immer größeren Informationsflut, sondern sieht sich einer mit ihm interaktiv agierenden Gemeinschaft von Gleichgesinnten gegenüber, die bereitwillig und getragen durch ebenjenes Medium "Internet" an der Organisation dieses Wissens mithelfen kann.[n](Beispiele von funktionierendem Crowdsourcing sind u.a. Wikipedia, Amazon, IMDB. Früher war z.B. auch dmoz recht beliebt. Bei dmoz werden Internetquellen intellektuell erschlossen. In Hochzeiten hatte dieser Dienst mehrere 10.000 aktive freiwillige Mitarbeiter. Bis jetzt sind 4.8 Millionen Seiten katalogisiert. Seit Gründung 1998 sind die erzeugten Daten offen und konnten so von anderen Diensten übernommen werden. Google hat die Daten bis 2011 genutzt.) Wenn diese Wissensorganisation dann nach LOD Prinzipien geschieht, dann sind die Ergebnisse dieser Wissensorganisation maschinell komfortabel weiterverarbeitbar - die Informationsflut lässt sich also tatsächlich beherrschen. Die Wikimedia Foundation hat das erkannt, und mit Wikidata[n](https://de.wikipedia.org/wiki/Wikidata) eine Infrastruktur geschaffen, mit derer die Wikipedia nach LOD Prinzipien katalogisiert wird.[n]( Dieselbe Stiftung hat mit der "Massively-Multiplayer_Online_Bibliography"
 (https://meta.wikimedia.org/wiki/Massively-Multiplayer_Online_Bibliography ) eine recht neue Projektidee, in der es darum geht, mit Hilfe Freiwilliger (der "Crowd") Millionen von frei verfügbaren Essays und Artikeln usw. nach LOD Prinzipien zu annotieren. Auch wenn dieses Projekt vielleicht gar nicht starten wird oder auch, wenn es dabei bleibt, nur nicht-akademische, nicht-fiktionale Texte zu katalogisieren, so ist dieses Projekt doch eine interessante Blaupause für ein Modell, wie graue akademische Literatur gesammelt werden kann. In dieses Projektmodell passen nämlich hervorragend Bibliothekare oder eben FIDs mit ihrem Wissen. Sie können z.B. dabei helfen, Taxonomien für die Texte bereitzustellen oder, bei fehlenden Taxonomien, diese Erstellen. Andere Menschen in dem Projekt werden Katalogisierungswerkzeuge zur Verfügung stellen, in denen diese Taxonomien eingebunden sind, sodass sie vom Katalogisierer (der "Crowd") per Drop-Down-Menü und durch multilinguale Vorschlagssuchen kategorisiert werden können. Danach können die so kategorisierten Ressourcen automatisch gefiltert und die Metadaten automatisch an den jeweiligen FID gesendet werden, um sie der fachspezifischen Sammlung nach einem Moderationsprozess hinzuzufügen. Diese Information, also das Kategorisieren einer Ressource zu einem FID, ist wiederum eine interessante, aussagekräftiges Information, die der ursprünglichen Ressourcenbeschreibung zugefügt wird. Somit fließt die moderierende, qualitätssichernde Kontrolle der Fachprofis in die Ausgangsdaten zurück und sind von allen anderen, die diese Daten konsumieren, nachnutzbar. Im LOD Paradigma erzeugt also die Nutzung einer Leistung potentiell einen Mehrwert für die Leistung. Es handelt sich um eine sog. Selbstverstärkung. )
 
-# Grundlegendes Desiderat an FIDs
+## Grundlegendes Desiderat an FIDs
 Grundlage für Nachweis- und Recherchesyteme sind Metdadaten und die Ressource an sich. Die Metadaten sollten möglichst frei fließen können. Die  Deutsche Nationalbibliothek und die deutschen Bibliotheksverbünde haben bereits mit der Freigabe von Daten begonnen. BVB und KOBV sowie  das hbz stellen ihre Daten sowohl als MARC oder MAB und auch als LOD bereit und  bieten darüber hinaus regelmäßige Aktualisierungen an. Die DNB bietet den größten Teil ihrer Daten unter einer offenen Lizenz an mit einjähriger "Moving Wall"[n](https://en.wikipedia.org/wiki/Moving_wall ). Für bestimmte Fächer lässt sich damit u. U. bereits ein guter FID-Recherchedienst aufbauen. Dabei sind Monographiedaten schon ganz gut abgedeckt, was oft fehlt sind aber   Artikelmetadaten und graue Literatur. Damit das "web of data" Realität wird, müssen weitere Daten göffnet werden. Und dies geschieht am Besten dort, wo diese Daten originär anfallen, also bei den Verlagen, bei der Erstellung von Fachbibliographien, und auch bei den FIDs etc. 
 Tritt ein FID mit Verlagen in Kontakt, sollte diese dazu gebracht werden, ihre Metadaten und andere Daten, die für ein Recherchesystem von großer Bedeutung sind, z.B. Inhaltsverzeichnisse und Abstracts, als Open Data unter CC0 zur Verfügung zu stellen. Diese Daten  spielen sowohl für Menschen als auch für Maschinen eine wichtige Quelle, um entscheiden zu können, wo die Ressource benötigt wird. Ein Schritt weiter bestünde in der Überlassung einer kompletten Kopie der   digitalen Veröffentlichung, z.B. um diese in Volltextsuchmaschinen zu   indexieren oder um sie zur automatischen Anreicherung der Metadaten   (Klassifizierung, Verschlagwortung usw.) zu nutzen oder/und um die   Ressource langzeitverfügbar zu machen.
 
-# Datenprozesskette
-In der in den Unterkapiteln von "# Aufgabenumsetzung" sich ergebenden Prozesskette kann der FID sich entscheiden, an welcher Stelle er die notwendigen Techniken selbst umsetzt und welche Leistungen an Dienstleister abgegeben werden. Dies betrifft Auswahl der Daten, Datentransformation und (moderierte) automatische Datenanreicherung, Veröffentlichung der Daten als LOD, die Indexierung in spezielle Datenhaltungssysteme, die Bereitstellung offener W3C Standards entsprechenden APIs über diese Datenhaltungssysteme, und die diese APIs einbindenden Nachweis-, Recherchesyteme und Portale. Durch diese Modularität und strikte Trennung von Daten, Datenhaltung und   Datenanzeige[n](Softwareentwickler nennen dieses Verfahren das "Model-View-Controller" (MVC) Prinzip) lassen sich die einzelnen Komponenten resp. die Dienstleister leichter austauschen.  Der FID behält die Kontrolle und begibt sich weniger stark in alternativlose Abhängigkeiten. Verbesserungen der Daten bleiben erhalten und werden nicht "vergessen" wenn ein Portal, ein Nachweissystem oder eine API abgeschaltet oder ausgetauscht  wird, da die Daten nicht zu eng an diese Komponenten gekoppelt sind. Die Nachhaltigkeit bleibt auf jeden Fall   in den Daten erhalten. Dadurch ist ein Lehre aus James Governors  Bonmot  "Data matures like Wine, Applications like Fish"[n](http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/ ) ("Daten altern wie Wein, Anwendungen wie Fisch") gezogen. 
+## Umsetzung und Koordination der Datenprozesskette
+Bei der in den Unterkapiteln von [Aufgabenumsetzung](#Aufgabenumsetzung) beschriebenen Prozesskette kann der FID sich entscheiden, an welcher Stelle er die notwendigen Techniken selbst umsetzt und welche Leistungen lediglich koordiniert werden, indem sie an Dienstleister abgegeben werden. Dies betrifft Auswahl der Daten, Datentransformation und (moderierte) automatische Datenanreicherung, Veröffentlichung der Daten als LOD, die Indexierung in spezielle Datenhaltungssysteme, die Bereitstellung offener W3C Standards entsprechenden APIs über diese Datenhaltungssysteme, und die diese APIs einbindenden Nachweis-, Recherchesyteme und Portale. Durch diese Modularität und strikte Trennung von Daten, Datenhaltung und   Datenanzeige[n](Softwareentwickler nennen dieses Verfahren das "Model-View-Controller" (MVC) Prinzip) lassen sich die einzelnen Komponenten resp. die Dienstleister leichter austauschen.  Der FID behält die Kontrolle und begibt sich weniger stark in alternativlose Abhängigkeiten. Verbesserungen der Daten bleiben erhalten und werden nicht "vergessen" wenn ein Portal, ein Nachweissystem oder eine API abgeschaltet oder ausgetauscht  wird, da die Daten nicht zu eng an diese Komponenten gekoppelt sind. Die Nachhaltigkeit bleibt auf jeden Fall   in den Daten erhalten. Dadurch ist ein Lehre aus James Governors  Bonmot  "Data matures like Wine, Applications like Fish"[n](http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/ ) ("Daten altern wie Wein, Anwendungen wie Fisch") gezogen. 
 
 # Fazit
 Es wurde gezeigt, warum eine LOD Metadateninfrastruktur nachhaltig ist und wie diese zum Aufbau von FIDs-Dienstleistungen genutzt werden kann um z.B. bessere Recherche- und Nachweissysteme zu ermöglichen und die Daten in das WWW resp. in das "web of data" zu integrieren. Es wurde zudem gezeigt, dass große Teile dieser Infrastruktur bereits vorhanden oder in Entwicklung sind.
@@ -141,15 +153,27 @@ Der Ansatz birgt aber auch ein Risiko, da die DFG offensichtlich eher in proprie
 
 # Referenzen
 DFG: Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaf. http://www.dfg.de/formulare/12_102/12_102_de.pdf
+
 Wissenschaftsrat: Übergreifende Empfehlungen zu Informationsinfrastruktur. http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf
+
 Grant, Carl: Ex Libris, Alma and Open Data . http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/
+
 Tochtermann, Klaus: 10 Thesen zum zukünftigen Profil von wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler Bedeutung. http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/
+
 Christof, Jürgen; Wonke-Stehle, Jens: 101.  Bibliothekartag 2012. Virtuelle Fachbibliotheken - Bilanz und Ausblick . http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick 
+
 (Depping, Ralf: 101. Bibliothekartag 2012 . Sondersammelgebiete im elektronischen Zeitalter. http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter
+
 Dini-AG-Kim: Empfehlung für die RDF-Repräsentation bibliografischer Daten. https://wiki.dnb.de/pages/viewpage.action?pageId=68060017
+
 Berners-Lee, Tim: On the next web. http://www.ted.com/talks/tim_berners_lee_on_the_next_web.html
+
 Christoph, Pascal: Datenanreicherung auf LOD-Basis. http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html
+
 Diverse: Massively-Multiplayer_Online_Bibliography. https://meta.wikimedia.org/wiki/Massively-Multiplayer_Online_Bibliography
+
 Governor, James: Why Applications Are Like Fish and Data is Like Wine. http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/
+
 Pohl, Adrian: Mit der DFG und CIB nach WorldShare und Alma. http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html
+
 Weaver, Jesse; Tarjan, Paul : Facebook Linked Data via the Graph API. http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api
