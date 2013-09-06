@@ -55,7 +55,7 @@ Inhaltsverzeichnis
 ------------------
 
 1.  [Einführung](#einführung)
-2.  [Definition LOD](#definition)
+2.  [Definition LOD](#definition)  
     2.1   [Offene Daten als grundlegende Anforderung](#grundlegendes)  
     2.2   [Linked Data - Best Practices](#ld)  
 3.  [Hintergrund - Erfahrungen aus vascoda](#hintergrund)
