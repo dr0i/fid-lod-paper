@@ -203,9 +203,9 @@ ist also Teil des WWW, dann ist damit die LOD Datenbank gewachsen
 ^[Auf diese Weise ließe sich auch recht einfach ein aussagekräftiger "Impact Factor" berechnen: wie oft wurde Artikel A referenziert? Wie oft wurden die Artikel, die Artikel A referenzieren, referenziert? Mit welchen Schlagworten sind die Ressourcen versehen? Usw.]
 .
 
-Im LOD Datenmodell (dem sog.
-["Graphen"](https://de.wikipedia.org/wiki/Graph_%28Graphentheorie%29)
-gibt es per se keinen abgeschlossenen Datensatz, da alles mit allem
+Das LOD Datenmodell basiert auf sog.
+["Graphen"](https://de.wikipedia.org/wiki/Graph_%28Graphentheorie%29).
+Deshalb gibt es per se keinen abgeschlossenen Datensatz, da alles mit allem
 verknüpft sein kann und somit weder Anfang noch Ende hat. Der
 Datenkonsument muss selber entscheiden, wo der Datensatz anfängt, wo er
 aufhört, und welche Daten z.B. als vertrauenswürdig angenommen werden
@@ -636,7 +636,7 @@ werden. Dies betrifft Auswahl der Daten, Datentransformation und
 (moderierte) automatische Datenanreicherung, Veröffentlichung der Daten
 als LOD, die Indexierung in spezielle Datenhaltungssysteme, die
 Bereitstellung offener W3C Standards entsprechenden APIs über diese
-Datenhaltungssysteme, und die diese APIs einbindenden Nachweis-,
+Datenhaltungssysteme, und die diese APIs einbindenden Nachweis- und
 Recherchesyteme und Portale. Durch diese Modularität und strikte
 Trennung von Daten, Datenhaltung und
 Datenanzeige^[Softwareentwickler nennen dieses Verfahren das "Model-View-Controller" (MVC) Prinzip.]
@@ -645,8 +645,8 @@ austauschen. Der FID behält die Kontrolle und begibt sich weniger stark
 in alternativlose Abhängigkeiten. Verbesserungen der Daten bleiben
 erhalten und werden nicht "vergessen" wenn ein Portal, ein
 Nachweissystem oder eine API abgeschaltet oder ausgetauscht wird, da die
-Daten nicht zu eng an diese Komponenten gekoppelt sind. Die
-Nachhaltigkeit bleibt auf jeden Fall in den Daten erhalten. Dadurch ist
+Daten nicht zu eng an diese Komponenten gekoppelt sind: "Data is stable – functions are not".
+Die Nachhaltigkeit bleibt auf jeden Fall in den Daten erhalten. Dadurch ist
 ein Lehre aus [James Governors Bonmot "Data matures like Wine,
 Applications like
 Fish"](http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/)
