@@ -37,22 +37,19 @@ Abstract:
 
 Dieser Artikel reflektiert die ["Richtlinien für das DFG geförderte
 System der Fachinformationsdienste für die
-Wissenschaf"](http://www.dfg.de/formulare/12_102/12_102_de.pdf) und zeigt
+Wissenschaft"](http://www.dfg.de/formulare/12_102/12_102_de.pdf) und zeigt
 dabei auf, wie Linked Open Data (LOD) beim Umbau der Sondersammelgebiete
 (SSG) zu Fachinformationsdiensten (FID) helfen kann. Es wird dabei
-insbesondere auf den Aspekt (Meta-)Dateninfrastruktur, eingegangen. Die
-These dieses Artikels ist, dass LOD prädestiniert ist, die Basis einer
-nachhaltigen Metadateninfrastruktur zu bilden.
+insbesondere auf den Aspekt (Meta-)Dateninfrastruktur eingegangen. Die
+These dieses Artikels ist, dass LOD prädestiniert ist, einen wichtigen Eckpfeiler
+einer nachhaltigen Metadateninfrastruktur zu bilden.
 
 Pascal Christoph kennt ViFas und SSGs aus seiner Arbeit von 2008-2010 am
 [hbz](http://www.hbz-nrw.de/) als technischer Umsetzer des Projekts
 ["vascoda"](http://de.wikipedia.org/wiki/Vascoda). Seit 2010 arbeitet er
 am Linked Open Data Dienst ["lobid.org"](http://lobid.org) des hbz .
 
-Adrian Pohl beschäftigt sich seit 2009 mit LOD im hbz und hat
-insbesondere lobid.org mitaufgebaut. Er koordiniert die Open Knowledge
-Foundation (OKFN) [Working Group on Open Bibliographic
-Data](http://openbiblio.net/). {TODO}
+Adrian Pohl arbeitet seit 2008 im Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (hbz). Sein Fokus liegt auf dem Bereich Linked Open Library Data und dabei insbesondere auf dem Aufbau und der Pflege des LOD-Service lobid.org. Seit Juni 2010 ist Adrian Koordinator der OKFN Working Group on Open Bibliographic Data.
 
 Inhaltsverzeichnis
 ------------------
@@ -441,44 +438,23 @@ einer entsprechenden kollaborativen Arbeitsweise für den Aufau eines
 zukunftsfähigen, innovativen und durch öffentliche Einrichtungen
 kontrollierten verfasst wurde: "
 
-#### <a name="manifesto"></a>Manifesto
-
-We support the formation and development of an international
-library infrastructure that is:
-
-* *future-proof*: it supports the development of sustainable solutions
-* *progressive*: it enables rapid development and quick adaptation to upcoming challenges
-* *empowering*: it empowers libraries to control to the maximum the infrastructure
-underlying their services for collection, indexing and dissemination of
-published knowledge.
-
-In order to reach the goal of a future-proof, progressive infrastructure
-that empowers libraries to control their future to the maximum, we
-endorse the following principles:
-
-* *Openness*. To the extent possible, we share our data, content, tools and ideas on the web, according to the
-requirements of the [Free Software
-Definition|http://www.gnu.org/philosophy/free-sw.html] and the [Open
-Definition|http://opendefinition.org/] and the best practices of the
-wider web community.
-* *Transparency*. Rules of conduct, project plans, minutes, plans for new features, and other artifacts are open, public,
-and easily accessible
-* *Inclusion*. Our projects are open to all; we
-provide the same opportunity to all. Everyone participates with the same
-rules; there are no rules to exclude any potential contributors which
-include, of course, direct competitors in the marketplace.
-* *Meritocracy*. The more you contribute the more responsibility you will
-earn. Leadership roles are also merit-based and earned by peer acclaim.
-* *Reuse*. Already invented elsewhere? - Great! We actively seek for solutions
-others have developed for a specific problem and are happy to re-use and
-adapt them for our context.
-* *Credit*. [Giving credit where credit is due](http://blog.ninapaley.com/2011/06/27/credit-is-due/)
-
-We know that
-libraries, archives, museums, and related organizations can't change
-from one day to the next. Nonetheless, we seek to organize our work
-according to these principles, even if we might start imperfectly and/or
-only within parts of the organization. "
+> # Libraries Empowerment Manifesto
+  
+> We support the formation and development of an international library infrastructure that is:
+> * *future-proof*: it supports the development of sustainable solutions;
+> * *progressive*: it enables rapid development and quick adaptation to upcoming challenges;
+> * *empowering*:  it empowers libraries to control to the maximum the infrastructure underlying their services for collection, indexing and dissemination of published knowledge.
+>  
+> In order to reach the goal of a future-proof, progressive infrastructure that empowers libraries to control their future to the maximum, we endorse the following principles:
+>   
+> * *Openness*. To the extent possible, we share our data, content, tools and ideas on  the web, according to the requirements of the [Free Software Definition](http://www.gnu.org/philosophy/free-sw.html) and the [Open Definition](http://opendefinition.org/) and the best practices of the wider web community.
+> * *Transparency*. Rules of conduct, project plans, minutes, plans for new features, and other artifacts are open, public, and easily accessible
+> * *Inclusion*. Our projects are open to all; we provide the  same opportunity to all.  Everyone participates with the same rules; there are no rules to exclude any potential contributors which include, of course, direct  competitors in the marketplace.
+> * *Meritocracy*. The more you contribute the more responsibility you will earn. Leadership roles are also merit-based and earned by peer acclaim.
+> * *Reuse*.  We actively seek for solutions others have  developed for a specific problem and are happy to reuse and adapt them for our context.
+> * *Credit*. We [give credit where credit is due](http://blog.ninapaley.com/2011/06/27/credit-is-due/).
+>   
+> We  know that libraries, archives, museums, and related organizations can't change from one day to the next. Nonetheless, we seek to organize our work according to these principles, even if we might start imperfectly and/or only within parts of the organization.
 
 Das Manifest ist auf Englisch verfasst, weil Kollaboration an
 Landesgrenzen nicht Halt macht und Erfahrungen und Lösungen, die auch
