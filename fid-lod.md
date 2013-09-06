@@ -124,9 +124,33 @@ dezentral ist. Es gilt das Motto: "Anybody can say anything about
 anything".^[zitiert nach Tim Berners Lee, 1999:
 http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html]
 
+Eine knappe, eher technische Beschreibung von LOD lautet:
+
+"Linked Open Data sind offene Daten (Open Data), die gemäß
+Linked-Data-Prinzipien (Linked Data) unter Nutzung der entsprechenden
+offenen W3C-Standards bereitgestellt werden. Während Open Data keine
+Datenformate vorgibt, solange es sich um offen dokumentierte Formate
+handelt, geht es bei Linked Data um die Etablierung von Best Practices
+für die Integration von Daten in das WWW auf Basis von Standards des
+World Wide Web Consortium (W3C). Die vier von Tim
+Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe https://de.wikipedia.org/wiki/Tim_Berners_Lee]
+formulierten Linked-Data-Prinzipien lauten: 
+
+1. Benutze URIs als Namen für Dinge. 
+2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
+3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
+4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
+
+Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
+Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
+diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
+SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
+Vokabularen/Ontologien."  
+_DINI-AG-KIM: LOD-Glossar. 2013._
+
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
 
-Grundlage eines jeden Fachinfromationssystems sind Aufbau und Pflege des *Bestand*s, 
+Grundlage eines jeden Fachinformationssystems sind Aufbau und Pflege des *Bestand*s, 
 um Zugriff auf relevante Ressourcen ermöglichen zu können sowie die 
 *Metadaten* für Nachweis- und Recherchesyteme, so dass eine Ressource überhaupt aufgefunden werden kann.
 Um technisch in der Lage zu sein, optimale Recherche- und Nachweissysteme zu bauen, 
@@ -159,7 +183,7 @@ Ressource langzeitverfügbar zu machen. Die weitere Verbreitung von Open Access 
 ### <a name="ld"></a>Linked Data - Best Practices
 
 Linked Open Data bedeutet - wie soeben ausgeführt - einerseits die offene Lizenzierung von Daten ("Open Data"). 
-Andererseits bezieht sich das "Linked Data" in LOD beziht auf eine Menge von Best Practices zur Datenpublikation, die auf Standards des W3C basieren. 
+Andererseits bezieht sich das "Linked Data" in LOD bezieht auf eine Menge von Best Practices zur Datenpublikation, die auf Standards des W3C basieren. 
   
 LOD ist somit eng mit dem World Wide Web (WWW) verzahnt. Es baut auf den
 gleichen Technologien und Standards auf. Oft wird das WWW auch als "web
@@ -174,31 +198,6 @@ und dem Objekt (also das, wohin verlinkt wird). Das ist im Vergleich zu
 bibliothekarischen Datenbanken nichts Neues, denn dort werden stets
 Aussagen gemacht wie "Buch X hat den Autor Y" und "Autor Y wurde geboren
 im Jahr Z".
-
-Eine knappe, eher technische Beschreibung von LOD lautet:
-=======
-
-"Linked Open Data sind offene Daten (Open Data), die gemäß
-Linked-Data-Prinzipien (Linked Data) unter Nutzung der entsprechenden
-offenen W3C-Standards bereitgestellt werden. Während Open Data keine
-Datenformate vorgibt, solange es sich um offen dokumentierte Formate
-handelt, geht es bei Linked Data um die Etablierung von Best Practices
-für die Integration von Daten in das WWW auf Basis von Standards des
-World Wide Web Consortium (W3C). Die vier von Tim
-Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe https://de.wikipedia.org/wiki/Tim_Berners_Lee]
-formulierten Linked-Data-Prinzipien lauten: 
-
-1. Benutze URIs als Namen für Dinge. 
-2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
-3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
-4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
-
-Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
-Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
-diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
-SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."  
-_DINI-AG-KIM: LOD-Glossar. 2013._
 
 Anders als bei Datenbanken, die im "deep web" versteckt sind, kann bei
 LOD jede zum gemeinsamen Datenpool etwas hinzufügen - denn, wer eine Webseite anlegen kann, kann auch LOD herstellen und
@@ -626,7 +625,7 @@ für Maschinen mittels Linked Data besser verstehbar zu machen. Einige
 ViFas haben schon begonnen, Schema.org in ihre Portale zu integrieren,
 z.B. http://edoc.vifapol.de. [Econstor](http://linkeddata.econstor.eu/),
 ein Dokumentenserver der ViFas,
-bietet asu diesem Grund schon seit geraumer Zeit Linked Data an.] Deshalb zeigt dieser Artikel warum,
+bietet aus diesem Grund schon seit geraumer Zeit Linked Data an.] Deshalb zeigt dieser Artikel warum,
 unabhängig von der Entscheidung gegen die Förderung einer
 selbstaufgebauten LOD-basierten Infrastruktur durch die Verbünde, die
 LOD-basierte Metadateninfrastruktur, die den WorldCat und ExLibris' Alma
@@ -644,7 +643,7 @@ Wissenschaftsrat (2011): Übergreifende Empfehlungen zu
 Informationsinfrastrukturen. 2011.
 Online: [http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf](http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf)
 
-DFG (2013): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März 2013. 
+DFG (2013): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März 2013.
 Online: [http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html)
 
 Grant, Carl (2011): Ex Libris, Alma and Open Data .
@@ -687,5 +686,5 @@ Kreutzer, Till (2011): Open Data – Freigabe von Daten aus Bibliothekskatalogen
 Pohl, Adrian (2013): Mit der DFG und CIB nach WorldShare und Alma. Online:
 [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html)
 
-Weaver, Jesse; Tarjan, Paul : Facebook Linked Data via the Graph API.
+Weaver, Jesse; Tarjan, Paul (2012): Facebook Linked Data via the Graph API.
 [http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api](http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api)
