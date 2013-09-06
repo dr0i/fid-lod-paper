@@ -1,5 +1,5 @@
-LOD als Vehikel zum Aufbau einer nachhaltigen FID-Metadateninfrastruktur
-========================================================================
+Dezentral, offen, vernetzt - Überlegungen zum Aufbau einer LOD-basierten FID-Metadateninfrastruktur
+===================================================================================================
 
 English:
 --------
@@ -22,7 +22,7 @@ sustainable metadata infrastructure.
 
 Authors:
 
-Pascal Christoph and Adrian Pohl  
+[Pascal Christoph](http://lobid.org/person/pc) and [Adrian Pohl](http://lobid.org/person/ap)
 Jülicher Str. 6 D-50674 Cologne  
 E-Mail: christoph@hbz-nrw.de  
 E-Mail: pohl@hbz-nrw.de  
@@ -57,37 +57,31 @@ Inhaltsverzeichnis
 1.  [Einführung](#einführung)
 2.  [Definition LOD](#definition)
 3.  [Hintergrund - Erfahrungen aus vascoda](#hintergrund)
-4.  [Aufgabenumsetzung](#aufgabenumsetzung)
-    1.  [Cooperare necesse est](#cooperare)
-        1.  [Manifesto](#manifesto)
-    2.  [Metadatenmapping, Datentransformation und automatische
+4.  [Cooperare necesse est](#cooperare)
+5.  [Aufgabenumsetzung](#aufgabenumsetzung)
+   5.1  [Metadatenmapping, Datentransformation und automatische
         Datenanreicherung](#metadatenmapping)
-    3.  [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
-    4.  [Hubs zur intellektuellen Datenanreicherung](#hubs)
-5.  [Grundlegendes Desiderat an FIDs](#grundlegendes)
-6.  [Umsetzung und Koordination der Datenprozesskette](#umsetzung)
-7.  [Fazit](#fazit)
-8.  [Referenzen](#referenzen)
+   5.2  [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
+   5.3  [Hubs zur intellektuellen Datenanreicherung](#hubs)
+6.  [Grundlegendes Desiderat an FIDs](#grundlegendes)
+7.  [Umsetzung und Koordination der Datenprozesskette](#umsetzung)
+8.  [Fazit](#fazit)
+9.  [Referenzen](#referenzen)
 
 ##<a name="einführung"></a>Einführung
 
-Die Bedürfnisse der Wissenschaftler stehen im Fokus der DFG-Richtlinien,
-deren Bedürfnisse haben FIDs zu befriedigen. Die These dieses Artikels
-ist, dass LOD eine ideale Basis liefert, um genau diesen Bedürfnissen
-gerecht zu werden. Doch stimmt das? Will der Wissenaschaftler LOD? Ist
-LOD überhaupt bekannt? Wahrscheinlich eher nicht.^[Es gibt natürlich auch Ausnahmen, z.B. den
-Informatiker Klaus Tochtermann, der kürzlich in ["10 Thesen zum
-zukünftigen Profil von wissenschaftlichen
-Informations-Infrastruktureinrichtungen mit überregionaler
-Bedeutung"](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/)
-die zentrale Rolle vom "Semantic Web" (im Text Synonym gebraucht zu
-"Linked Data") herausgestellt hat] Und
-der Wissenschaftler muss LOD auch gar nicht kennen. Diejenigen
-allerdings, die die Werkzeuge herstellen oder die Teil einer
-Informationsinfrastruktur sind, derer sich die Wissenschaftler bedienen,
-müssen natürlich die LOD Prinzipien kennen, um die auf LOD aufgebaute
-Metadateninfrastruktur nutzen und ausbauen zu können. Dieser Artikel
-vermittelt grundlegende Einblicke in das LOD-Paradigma, stellt die FIDs
+Die "Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft" der Deutschen Forschungsgemeinschaft (DFG) und das damit verbundene Förderprogramm haben den Aufbau sogenannter "Fachinformationsdienste für die Wissenschaft" (FID) zum Ziel. 
+Diese FIDs sollen die bestehenden Strukturen der Sondersammelgebiete (SSG) und Virtuellen Fachbibliotheken (ViFa) zusammenführen und schließlich ersetzen. Diese von der DFG geförderten Strukturen dienen seit jeher dem Zweck der wissenschaftlichen Informationsversorgung. 
+Dementsprechend haben die FIDs zukünftig die Aufgabe, die Informationsbedürfnisse von Fachwissenschaftlerinnen und Fachwissenschaftlern zu befriedigen. 
+Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms ... die Hoffung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft dienen können". 
+  
+Die These dieses Artikels ist, dass Linked Open Data (LOD) einen wichtigen Beitrag dazu liefert, den Anforderungen eines flexiblen und zukunftsfähigen Systems der Informationsversorgung
+gerecht zu werden.  
+Im folgenden werden zunächst knapp die Best Practices von Linked Open Data vermittelt. 
+Sodann werden Erfahrungen dem vascoda-Projekt geschildert und Probleme des Projekts aufgezeigt, die mit einem LOD-Ansatz hätten vermieden werden können. 
+In Abschnitt  {} werden Entwicklungs-, Kommunikations- und Organisationsprinzipien genannt, die in der LOD-Gemeinschaft gepflegt werden und 
+den kollaborativen Aufbau einer nachhaltigen und flexiblen Informationsinfrastruktur begünstigen. 
+ 
 in diesen Kontext und motiviert dazu, WissenschaftlerInnen an die Hand
 zu nehmen und durch die Informationsflut auf der Basis von LOD zu
 geleiten. Der Wissenschaftsrat schreibt 2011:
@@ -152,7 +146,7 @@ anderen Bereichen die Expertise, auch wenn LOD hier wohl einige Vorteile
 mit sich bringen kann, da auch bei der Auswahl von Ressourcen resp.
 deren Archivierung Metadaten eine wichtige Rolle spielen.
 
-##<a name="definition"></a>Definition LOD
+##<a name="definition"></a>Was ist Linked Open Data?
 
 Die grundlegende Idee von LOD ist Offenheit. "Offenheit" gestaltet sich
 hierbei in mehreren Dimensionen:
@@ -384,42 +378,12 @@ sind:
     nur - aber auch - im LOD-Umfeld vorherrschen, sind somit höchst
     flexibel.
 
-##<a name="aufgabenumsetzung"></a>Aufgabenumsetzung
+Wir haben in diesem und dem letzten beiden Kapiteln gesehen: 
+LOD unterstützt auf der einen Seite direkt Aufbau und Pflege einer Informationsinfrastruktur - durch den dezentralen Ansatz, die Flexibilität des Datenmodells und die offene Lizenzierung von Daten. 
+Auf der anderen Seite fördert LOD indirekt den Aufbau einer solchen Infrastruktur , weil etwa bestimmte Arbeitsweisen (agile Entwicklung), ein offener Austausch und Kooperation oder die Nutzung von Open Source Software im LOD-Kontext weit verbreitet sind. 
+Da im Vergleich zu den konkreten Technologien die "weichen Faktoren" der Kommunikation und Organisation von grundlegenderer Wichtigkeit sind, wird im folgenden zunächst auf diese eingegangen ehe die konkrete Aufgabenumsetzung unter Nutzung von LOD angesprochen wird.
 
-Den FIDs wird ziemlich freie Hand dabei gelassen, die
-Informationsbedürfnisse des Wissenschaftlers zu befriedigen. Das
-bedeutet unter anderem, dass FIDs die Wahl haben, technische
-Infrastrukturen selbst aufzubauen und zu pflegen oder aber lediglich als
-Vermittler zwischen den Dienstleistern (Datenerzeugern auf der einen,
-Datenverarbeiter auf der anderen Seite) aufzutreten. In den
-DFG-Richtlinien steht dazu im Kapitel "Querschnittsaufgaben":
-
- "Im System
-der Fachinformationsdienste sind für jene technisch-organisatorischen
-Arbeiten, die für die einzelnen Fachgebiete gleichartig durchzuführen
-sind und zugleich einen hohen Arbeitsaufwand und besondere Expertise
-erfordern, Querschnittsbereiche vorgesehen, in denen die Betreuung
-dieser Aufgaben gebündelt wahrgenommen wird. Dies betrifft vor allem den
-Umgang mit digitalen Medien. Dabei ist es ein ausdrückliches Ziel, durch
-die Aufgabenbündelung eine Entlastung zugunsten der fachlichen Arbeit in
-den einzelnen Fachinformationsdienstenzu erreichen und durch
-Synergieeffekte auch das Potential für Einsparungen optimal
-auszunutzen."  
- _DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien
-für das DFG geförderte System der Fachinformationsdienste
-für die Wissenschaft. S. 10 ._
-
-Dieser Anstoß der DFG zur Kooperation und zum Aufbau von
-Kompetenzzentren für "Querschnittsaufgaben" ist zu begrüßen. Die
-Möglichkeiten zum Aufbau von Synergien sollen im folgenden näher
-betrachtet werden insbesondere mit Blick auf die Arbeit mit und
-Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
-
-* [Metadatenmapping, Datentransformation und automatische Datenanreicherung](#metadatenmapping)
-* [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
-* [die intellektuelle Erstellung, Verbesserung und Anreicherung von Erschließungsinformationen](#hubs)
-
-### <a name="cooperare"></a>Cooperare necesse est
+### <a name="cooperare"></a>Cooperare necesse es
 
 Die umfangreichen und teilweise komplexen Aufgaben, die FIDs zu
 bewältigen haben und die Knappheit der dafür zur Verfügung stehenden
@@ -464,6 +428,40 @@ handelt es sich hierbei um einen ersten Entwurf. Alle Interessierten
 sind herzlich eingeladen, sich an der weiteren Entwicklung^[Auf dem
 Etherpad [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM) zu beteiligen].
 
+##<a name="aufgabenumsetzung"></a>Aufgabenumsetzung
+
+Den FIDs wird ziemlich freie Hand dabei gelassen, die
+Informationsbedürfnisse des Wissenschaftlers zu befriedigen. Das
+bedeutet unter anderem, dass FIDs die Wahl haben, technische
+Infrastrukturen selbst aufzubauen und zu pflegen oder aber lediglich als
+Vermittler zwischen den Dienstleistern (Datenerzeugern auf der einen,
+Datenverarbeiter auf der anderen Seite) aufzutreten. In den
+DFG-Richtlinien steht dazu im Kapitel "Querschnittsaufgaben":
+
+ "Im System
+der Fachinformationsdienste sind für jene technisch-organisatorischen
+Arbeiten, die für die einzelnen Fachgebiete gleichartig durchzuführen
+sind und zugleich einen hohen Arbeitsaufwand und besondere Expertise
+erfordern, Querschnittsbereiche vorgesehen, in denen die Betreuung
+dieser Aufgaben gebündelt wahrgenommen wird. Dies betrifft vor allem den
+Umgang mit digitalen Medien. Dabei ist es ein ausdrückliches Ziel, durch
+die Aufgabenbündelung eine Entlastung zugunsten der fachlichen Arbeit in
+den einzelnen Fachinformationsdienstenzu erreichen und durch
+Synergieeffekte auch das Potential für Einsparungen optimal
+auszunutzen."  
+ _DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien
+für das DFG geförderte System der Fachinformationsdienste
+für die Wissenschaft. S. 10 ._
+
+Dieser Anstoß der DFG zur Kooperation und zum Aufbau von
+Kompetenzzentren für "Querschnittsaufgaben" ist zu begrüßen. Die
+Möglichkeiten zum Aufbau von Synergien sollen im folgenden näher
+betrachtet werden insbesondere mit Blick auf die Arbeit mit und
+Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
+
+* [Metadatenmapping, Datentransformation und automatische Datenanreicherung](#metadatenmapping)
+* [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
+* [die intellektuelle Erstellung, Verbesserung und Anreicherung von Erschließungsinformationen](#hubs)
 ### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische Datenanreicherung
 
 Bei jedem Dienst, der eine Recherche
