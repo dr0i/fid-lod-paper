@@ -60,9 +60,9 @@ Inhaltsverzeichnis
 4.  [Cooperare necesse est](#cooperare)
 5.  [Aufgabenumsetzung](#aufgabenumsetzung)
     5.1  [Metadatenmapping, Datentransformation und automatische
-        Datenanreicherung](#metadatenmapping)
-    5.2  [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
-    5.3  [Hubs zur intellektuellen Datenanreicherung](#hubs)
+        Datenanreicherung](#metadatenmapping)  
+    5.2  [Aufbau von Rechercheindizes und Web-APIs](#aufbau)  
+    5.3  [Hubs zur intellektuellen Datenanreicherung](#hubs)  
 6.  [Grundlegendes Desiderat an FIDs](#grundlegendes)
 7.  [Umsetzung und Koordination der Datenprozesskette](#umsetzung)
 8.  [Fazit](#fazit)
