@@ -570,7 +570,7 @@ Wikidata^[Siehe [https://de.wikipedia.org/wiki/Wikidata](https://de.wikipedia.or
 geschaffen, mit derer die Wikipedia nach LOD Prinzipien katalogisiert
 wird.^[Dieselbe Stiftung hat mit der ["Massively-Multiplayer_Online_Bibliography"](https://meta.wikimedia.org/wiki/Massively-Multiplayer_Online_Bibliography ) eine recht neue Projektidee, in der es darum geht, mit Hilfe Freiwilliger (der "Crowd") Millionen von frei verfügbaren Essays und Artikeln usw. nach LOD Prinzipien zu annotieren. Auch wenn dieses Projekt vielleicht gar nicht starten wird oder auch, wenn es dabei bleibt, nur nicht-akademische, nicht-fiktionale Texte zu katalogisieren, so ist dieses Projekt doch eine interessante Blaupause für ein Modell, wie graue akademische Literatur gesammelt werden kann. In dieses Projektmodell passen nämlich hervorragend Bibliothekare oder eben FIDs mit ihrem Wissen. Sie können z.B. dabei helfen, Taxonomien für die Texte bereitzustellen oder, bei fehlenden Taxonomien, diese Erstellen. Andere Menschen in dem Projekt werden Katalogisierungswerkzeuge zur Verfügung stellen, in denen diese Taxonomien eingebunden sind, sodass sie vom Katalogisierer (der "Crowd") per Drop-Down-Menü und durch multilinguale Vorschlagssuchen kategorisiert werden können. Danach können die so kategorisierten Ressourcen automatisch gefiltert und die Metadaten automatisch an den jeweiligen FID gesendet werden, um sie der fachspezifischen Sammlung nach einem Moderationsprozess hinzuzufügen. Diese Information, also das Kategorisieren einer Ressource zu einem FID, ist wiederum eine interessante, aussagekräftiges Information, die der ursprünglichen Ressourcenbeschreibung zugefügt wird. Somit fließt die moderierende, qualitätssichernde Kontrolle der Fachprofis in die Ausgangsdaten zurück und sind von allen anderen, die diese Daten konsumieren, nachnutzbar. Im LOD Paradigma erzeugt also die Nutzung einer Leistung potentiell einen Mehrwert für die Leistung. Es handelt sich um eine sog. Selbstverstärkung.]
 
-### <a name="grundlegendes"></a>Grundlegendes Desiderat an FIDs
+## <a name="grundlegendes"></a>Grundlegendes Desiderat an FIDs
 
 Grundlage für Nachweis- und Recherchesyteme sind Metdadaten und die
 Ressource an sich. Die Metadaten sollten möglichst frei fließen können.
@@ -600,7 +600,7 @@ oder um sie zur automatischen Anreicherung der Metadaten
 (Klassifizierung, Verschlagwortung usw.) zu nutzen oder/und um die
 Ressource langzeitverfügbar zu machen.
 
-### <a name="umsetzung"></a>Umsetzung und Koordination der Datenprozesskette
+## <a name="umsetzung"></a>Umsetzung und Koordination der Datenprozesskette
 
 Bei der in den Unterkapiteln von [Aufgabenumsetzung](#Aufgabenumsetzung)
 beschriebenen Prozesskette kann der FID sich entscheiden, an welcher
