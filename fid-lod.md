@@ -58,7 +58,7 @@ Inhaltsverzeichnis
 2.  [Definition LOD](#definition)
 3.  [Hintergrund - Erfahrungen aus vascoda](#hintergrund)
 4.  [Cooperare necesse est](#cooperare)
-5.  [Aufgabenumsetzung](#aufgabenumsetzung)
+5.  [Aufgabenumsetzung](#aufgabenumsetzung)  
     5.1  [Metadatenmapping, Datentransformation und automatische
         Datenanreicherung](#metadatenmapping)  
     5.2  [Aufbau von Rechercheindizes und Web-APIs](#aufbau)  
