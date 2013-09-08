@@ -295,16 +295,6 @@ seien im Folgenden genannt.
     offene Lizenzierung der Daten voraus. Dadurch wird Datenaggreagatoren
     größtmögliche Flexibilität bei der Einbindung der Daten
     gegeben.^[siehe dazu auch ["Datenanreicherung auf LOD-Basis"]( http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html)].
-*   Es gab im vascoda-Projekt eine Suchmaschinenföderation zwischen hbz,
-    [Gesis (Bonn)](http://www.gesis.org) und der [TIB (Hannover)](http://www.tib.uni-hannover.de/). Der Schnittstelle fehlte es
-    allerdings an Rankinginformationen, um die Relevanz der verschiedenen Treffer
-    in Beziehung setzen zu können. So wurden die Treffer im
-    sogenannten Round-Robin Verfahren, also schlicht abwechselnd,
-    dargestellt. Das verzerrte die Rangliste in der Trefferübersicht
-    teilweise dramatisch. Eine offene Lizenzierung der
-    Daten hätte ermöglicht, die Daten in einer zentralen Suchmaschine
-    abzulegen um ein ordentliches Ranking zu
-    haben. Ein wesentliches Problem in der Herstellung solcher suchmaschinenübergreifender Rankinginformationen lag in der damals vom hbz benutzten proprietären Suchmaschine FAST-ESP begründet: die nötigen Ranking-Algorithmen waren nicht Open Source und konnten damit schlicht nicht ermittelt werden. Seit einiger Zeit ist aber die Hardware und sind vor allem alternative Open Source Suchmaschinen soweit fortgeschritten, dass mühelos mehrere Milliarden Dokumente in diesen Open Source Suchmaschinen Platz finden und schnell durchsucht werden können.
 *   Die Softwareentwicklung rund um vascoda geschah nicht als Open
     Source. Dadurch konnte sich keine Technikergemeinschaft
     ("Community") rund um das Projekt aufbauen, um eine Nachhaltigkeit
