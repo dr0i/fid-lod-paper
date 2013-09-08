@@ -55,10 +55,10 @@ Inhaltsverzeichnis
 ------------------
 
 1.  [Einführung](#einführung)
-2.  [Definition LOD](#definition)  
+2.  [Was ist Linked Open Data (LOD)?](#lod)  
     2.1   [Offene Daten als grundlegende Anforderung](#grundlegendes)  
     2.2   [Linked Data - Best Practices](#ld)  
-3.  [Hintergrund - Erfahrungen aus vascoda](#hintergrund)
+3.  [Erfahrungen aus dem vascoda-Projekt](#vascoda)
 4.  [Cooperare necesse est](#cooperare)
 5.  [Aufgabenumsetzung](#aufgabenumsetzung)  
     5.1   [Metadatenmapping, Datentransformation und automatische
@@ -99,13 +99,12 @@ _Fachinformationsdienste für die Wissenschaft. Richtlinien
 für das DFG geförderte System der Fachinformationsdienste
 für die Wissenschaft. 2013, S. 5-6 ._
 
-Auf den Punkt "Aufbau und die Pflege komfortabler Nachweis- und
-Recherchesysteme" wird unten näher eingegangen. Den Autoren fehlt in den
-anderen Bereichen die Expertise, auch wenn LOD hier wohl einige Vorteile
-mit sich bringen kann, da auch bei der Auswahl von Ressourcen resp.
-deren Archivierung Metadaten eine wichtige Rolle spielen.
+Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe "Aufbau und die Pflege komfortabler Nachweis- und
+Recherchesysteme". Auch wenn LOD in den beiden anderen genannten Aufgabengebieten wohl einige Vorteile
+mit sich bringen kann, weil Metadate auch bei der Auswahl von Ressourcen bzw.
+deren Archivierung eine wichtige Rolle spielen - den Autoren fehlt in diesen Bereichen schlicht die nötige Expertise, so dass dieser Beitrag dazu schweigt.
 
-##<a name="definition"></a>Was ist Linked Open Data?
+## <a name="lod"></a>Was ist Linked Open Data?
 
 Die grundlegende Idee von LOD ist Offenheit. "Offenheit" gestaltet sich
 hierbei in mehreren Dimensionen:
@@ -126,7 +125,7 @@ http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html]
 
 Eine knappe, eher technische Beschreibung von LOD lautet:
 
-"Linked Open Data sind offene Daten (Open Data), die gemäß
+> "Linked Open Data sind offene Daten (Open Data), die gemäß
 Linked-Data-Prinzipien (Linked Data) unter Nutzung der entsprechenden
 offenen W3C-Standards bereitgestellt werden. Während Open Data keine
 Datenformate vorgibt, solange es sich um offen dokumentierte Formate
@@ -135,13 +134,13 @@ für die Integration von Daten in das WWW auf Basis von Standards des
 World Wide Web Consortium (W3C). Die vier von Tim
 Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe https://de.wikipedia.org/wiki/Tim_Berners_Lee]
 formulierten Linked-Data-Prinzipien lauten: 
-
-1. Benutze URIs als Namen für Dinge. 
-2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
-3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
-4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
-
-Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
+>  
+> 1. Benutze URIs als Namen für Dinge. 
+> 2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
+> 3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
+> 4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
+>   
+> Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
 Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
 diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
@@ -157,8 +156,8 @@ Um technisch in der Lage zu sein, optimale Recherche- und Nachweissysteme zu bau
 sollte der Zugriff auf die nötigen Metadaten möglichst einfach und reibungslos vor sich gehen. 
 Idealerweise stellen Metadatenproduzenten ihre Daten unter einer offenen Lizenz^[D. h. es wird eine Lizenz verwendet, die kompatibel ist mit der [Open Definition](http://opendefinition.org/). Für eine Definition von offenen *bibliographischen* Daten siehe die "Prinzipien zu offenen bibliographischen Daten" unter [http://openbiblio.net/principles/de/](http://openbiblio.net/principles/de/). Ein umfangreicher rechtlicher Ratgeber zur Freigabe von Daten aus Bibliothekskatalogen ist.]
    
-Die Deutsche Nationalbibliothek und die deutschen Bibliotheksverbünde
-haben bereits mit der Freigabe von Daten begonnen. Der Bibliotheksverbund Bayern (BVB) 
+In Deutschland haben die Deutsche Nationalbibliothek (DNB) und die deutschen Bibliotheksverbünde
+haben bereits mit der Freigabe von Daten begonnen.^[Für eine Übersicht über offene Datensets im internationalen Bibliothekskontext siehe die Gruppe "Bibliographic Data" im Open-Data-Verzeichnis "The Data Hub": [http://datahub.io/group/bibliographic](http://datahub.io/group/bibliographic) .] Der Bibliotheksverbund Bayern (BVB) 
 und der Kooperative Bibliotheksverbund Berlin-Brandenburg (KOBV) sowie
 das hbz stellen ihre Daten sowohl als MARC oder MAB und auch als LOD
 bereit und bieten darüber hinaus regelmäßige Aktualisierungen an. Die
@@ -264,10 +263,7 @@ Wikidata - in die Wikipedia gelangen und dort die Verfügbarkeit einer referenzi
 IP des Nutzers ermittelte) nächstgelegenen Bibliotheken angezeigt
 wird.
 
-
-
-
-##<a name="hintergrund"></a>Hintergrund: Erfahrungen aus vascoda
+##<a name="vascoda"></a>Erfahrungen aus dem vascoda-Projekt
 
 Von 2008 bis Ende 2010 war der Autor Pascal Christoph beim hbz
 mitverantwortlich für Datentransformation und
@@ -358,7 +354,7 @@ LOD unterstützt auf der einen Seite direkt Aufbau und Pflege einer Informations
 Auf der anderen Seite fördert LOD indirekt den Aufbau einer solchen Infrastruktur , weil etwa bestimmte Arbeitsweisen (agile Entwicklung), ein offener Austausch und Kooperation oder die Nutzung von Open Source Software im LOD-Kontext weit verbreitet sind. 
 Da im Vergleich zu den konkreten Technologien die "weichen Faktoren" der Kommunikation und Organisation von grundlegenderer Wichtigkeit sind, wird im folgenden zunächst auf diese eingegangen ehe die konkrete Aufgabenumsetzung unter Nutzung von LOD angesprochen wird.
 
-### <a name="cooperare"></a>Cooperare necesse es
+## <a name="cooperare"></a>Cooperare necesse es
 
 Die umfangreichen und teilweise komplexen Aufgaben, die FIDs zu
 bewältigen haben und die Knappheit der dafür zur Verfügung stehenden
