@@ -100,7 +100,7 @@ für das DFG geförderte System der Fachinformationsdienste
 für die Wissenschaft. 2013, S. 5-6 ._
 
 Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe "Aufbau und die Pflege komfortabler Nachweis- und
-Recherchesysteme". Auch wenn LOD in den beiden anderen genannten Aufgabengebieten wohl einige Vorteile
+Recherchesysteme" und den damit verbundenen Prozessen der Datenaggregation und des Datenmanagements. Auch wenn LOD in den beiden anderen genannten Aufgabengebieten wohl einige Vorteile
 mit sich bringen kann, weil Metadate auch bei der Auswahl von Ressourcen bzw.
 deren Archivierung eine wichtige Rolle spielen - den Autoren fehlt in diesen Bereichen schlicht die nötige Expertise, so dass dieser Beitrag dazu schweigt.
 
@@ -347,21 +347,21 @@ Da im Vergleich zu den konkreten Technologien die "weichen Faktoren" der Kommuni
 ## <a name="cooperare"></a>Cooperare necesse es
 
 Die umfangreichen und teilweise komplexen Aufgaben, die FIDs zu
-bewältigen haben und die Knappheit der dafür zur Verfügung stehenden
+bewältigen haben, und die Knappheit der dafür zur Verfügung stehenden
 Ressourcen legen eine Kooperation der betroffenen Einrichtungen nahe -
 nicht umsonst weist die DFG auf das Potential der Bündelung von
-Querschnittsaufgaben in Kompetenzzentren hin. Eine Umgebung aufzubauen
-zur Herstellung und Pflege eines so nachhaltigen wie innovativen Systems
+Querschnittsaufgaben in Kompetenzzentren hin. Gute Bedingungen herzustellen
+für die Herstellung und Pflege eines so nachhaltigen wie innovativen Systems
 der Informationsversorgung ist allerdings keine leichte Aufgabe.
 Konkrete Technologien spielen beim Aufbau eines solchen Systems eine
 untergeordnete Rolle, sie können seine Entstehung allenfalls
 unterstützen.  Wichtiger sind bestimmte Formen der Zusammenarbeit, der Kommunikation,
-des Teilens von Erfahrungen, Lösungen, Fehlschlägen und Erfolgen. Als
+des Teilens von Erfahrungen und Wissen. Als
 pointierte Darstellung der wichtigen Aspekte sei an dieser Stelle der
-Entwurf eines entsprechenden Manifests zitiert, das zur Beförderung
-einer entsprechenden kollaborativen Arbeitsweise für den Aufau eines
+Entwurf eines Manifests zitiert, das zur Beförderung
+einer entsprechenden kollaborativen Arbeitsweise für den Aufau einer
 zukunftsfähigen, innovativen und durch öffentliche Einrichtungen
-kontrollierten verfasst wurde: "
+kontrollierten Bibliotheks-IT-Infrastruktur verfasst wurde: "
 
 > # Libraries Empowerment Manifesto
   
@@ -385,9 +385,9 @@ Das Manifest ist auf Englisch verfasst, weil Kollaboration an
 Landesgrenzen nicht Halt macht und Erfahrungen und Lösungen, die auch
 für nicht-deutsche Institutionen von Nutzen sein könnten, im besten Fall
 auch diesen zugänglich gemacht werden sollten. Wie bereits angemerkt
-handelt es sich hierbei um einen ersten Entwurf. Alle Interessierten
-sind herzlich eingeladen, sich an der weiteren Entwicklung^[Auf dem
-Etherpad [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM) zu beteiligen].
+handelt es sich bei dem Manifest um einen Entwurf. Alle Interessierten
+sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
+Etherpad tun unter [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM).]
 
 ##<a name="aufgabenumsetzung"></a>Aufgabenumsetzung
 
@@ -399,7 +399,7 @@ Vermittler zwischen den Dienstleistern (Datenerzeugern auf der einen,
 Datenverarbeiter auf der anderen Seite) aufzutreten. In den
 DFG-Richtlinien steht dazu im Kapitel "Querschnittsaufgaben":
 
- "Im System
+> "Im System
 der Fachinformationsdienste sind für jene technisch-organisatorischen
 Arbeiten, die für die einzelnen Fachgebiete gleichartig durchzuführen
 sind und zugleich einen hohen Arbeitsaufwand und besondere Expertise
@@ -427,12 +427,12 @@ Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
 ### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische Datenanreicherung
 
 Bei jedem Dienst, der eine Recherche
-über aus verschiedenen Quellen aggregierten Daten ermöglicht, fallen
+über aus verschiedenen Quellen aggregierte Daten ermöglicht, fallen
 regelmäßig und langfristig Aufgaben im Kontext von Datenaggregation,
 Metadatenmapping, Datentransformation und -anreicherung an. Bisher haben
 meist unterschiedliche Institutionen jeweils eigene Expertisen und
-eigene Lösungen für diese Aufgaben entwickelt. Häufig findet bereits
-jetzt eine gegenseitige Unterstützung und Zusammenarbeit einiger
+eigene Lösungen für diese Aufgaben entwickelt. Häufig findet auch
+ eine gegenseitige Unterstützung und Zusammenarbeit einiger
 Insitutionen statt, indem etwa entwickelte Software-Anwendungen
 weitergegeben werden. Kooperationen finden aber meist eher unter der
 Hand und nicht transparent im Web statt.
@@ -450,7 +450,7 @@ Flexibilität und Wiederverwendungsmöglichkeit ein zentrales Anliegen.
 Für Metafacture sind die für die Datentransformationen notwendigen
 Beschreibungen von Feldüberführungen ("Mapping") in
 Konfigurationsdateien hinterlegt
-.^[Ein Beispiel zur Überführung der ZDB-Isil Datei in LOD ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml).]
+.^[Ein Beispiel zur Überführung der ZDB-ISIL Datei in LOD ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml).]
 Diese Mappingdateien werden über eine
 Workflowdatei^[Ein Beispiel dieser sog. flux-Datei ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux).]
 gesteuert. Die Adaption dieser zwei Dateien erlauben es, den kompletten
@@ -460,9 +460,9 @@ d.h. dass auch ohne Programmierkenntnisse Datentransformationen
 definiert und durchgeführt werden können.
 
 Auch für die automatische Datenanreicherung gibt es freie Software, die
-diese Aufgabe unterstützt. Z.B. können mit dem im Eu-Projekt "Lod2"
-entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/)  Zusammenführungen
-von LOD Daten durchgeführt werden. Das Projekt
+diese Aufgabe unterstützt. Z.B. können mit dem im EU-Projekt "LOD2"
+entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/) Zusammenführungen
+von LOD-Daten durchgeführt werden. Das Projekt
 ["culturegraph"](http://www.culturegraph.org) bietet ebenfalls eine
 Plattform für Datenzusammenführung. Dabei wird die Software
 ["hadoop"](https://hadoop.apache.org/) eingesetzt, die auch in lobid.org
@@ -471,14 +471,14 @@ ebenfalls durch die transparente, offene Zusammenarbeit im Bereich
 Algorithmenentwicklung. So sind z.B. erste Algorithmen zur Berechnung
 von Bündeln offen
 publiziert.^[Siehe dazu [http://hub.culturegraph.org/statistics/alg(http://hub.culturegraph.org/statistics/alg).] Alle an
-automatischer bibliographsicher Datenanreicherung Interessierte können
+automatischer bibliographsicher Datenanreicherung Interessierten können
 auf diese Algorithmen zugreifen und für eigene Zwecke nutzen.
 
 ### <a name="aufbau"></a>Aufbau von Rechercheindizes und Web-APIs
 
 Zum Aufbau von Rechercheindizes und
 APIs^[Eine API ist eine Programmierschnittstelle, die es ermöglicht, von einem Softwaresystem auf ein anderes zuzugreifen. Bei einer Web-API geschieht dies über das WWW, siehe [https://en.wikipedia.org/wiki/Web_API](https://en.wikipedia.org/wiki/Web_API).]
-eignen sich bereits vorhandenen leistungsfähige Open Source Software wie
+eignet sich bereits vorhandene leistungsfähige Open-Source-Software wie
 etwa die Suchmaschinen Solr oder elasticsearch. Technische
 Dienstleister, auch u.a. Verbünde und Bibliotheken, können teilweise die
 technische Infrastruktur bereitstellen und bei deren Nutzung
