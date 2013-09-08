@@ -55,7 +55,7 @@ Inhaltsverzeichnis
 ------------------
 
 1.  [Einführung](#einführung)
-2.  [Was ist Linked Open Data (LOD)?](#lod)  
+2.  [Was ist Linked Open Data?](#lod)  
     2.1   [Offene Daten als grundlegende Anforderung](#grundlegendes)  
     2.2   [Linked Data - Best Practices](#ld)  
 3.  [Erfahrungen aus dem vascoda-Projekt](#vascoda)
@@ -144,7 +144,7 @@ formulierten Linked-Data-Prinzipien lauten:
 Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
 diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."  
+Vokabularen/Ontologien."    
 _DINI-AG-KIM: LOD-Glossar. 2013._
 
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
@@ -267,38 +267,38 @@ wird.
 
 Von 2008 bis Ende 2010 war der Autor Pascal Christoph beim hbz
 mitverantwortlich für Datentransformation und
-Suchmaschinenadministration für Vascoda. Für das Vascoda-Portal wurden
-dabei Daten aus mehr als 40 verschiedenen Quellen (SSGs, ViFas,
+Suchmaschinenadministration für vascoda. 
+Für das vascoda-Portal wurden Daten aus mehr als 40 verschiedenen Quellen (SSGs, ViFas,
 Fachportalen und auch Verbunddatenbanken) in verschiedensten Formaten
-für die Suchmaschine aufbereitet. Auch wenn in den DFG
+für die Suchmaschine aufbereitet. Auch wenn in den DFG-
 Richtlinien eine Portallösung für FIDs nicht als zwingend vorausgesetzt wird, ist es
-sinnvoll, an dieser Stelle knapp auf die Erfahrungen mit Vascoda, vor
-allem dem Voscoda-Portal, einzugehen. Mit der Anwendung von LOD Best
+sinnvoll, an dieser Stelle knapp auf die Erfahrungen mit vascoda, vor
+allem dem vascoda-Portal, einzugehen. Mit der Anwendung der LOD-Best-
 Practices durch FIDs wäre die Gefahr der Wiederholung vieler Probleme
-von Vascoda nämlich per definitionem von vornherein ausgeschlossen.
-Konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen,
-sind:
+von vascoda nämlich per definitionem von vornherein ausgeschlossen.
+Einige konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen, 
+seien im Folgenden genannt.
 
-* Oftmals wurde vascoda als bloßer Backlink-Maschine zu den jeweils
-    eigenen Portalen gesehen. D.h., viele wichtige Metadaten wurden
-    vascoda vorenthalten, u.a. Bestandsangaben, sodass die Benutzerin
+* Oftmals wurde vascoda als bloße Backlink-Maschine zu den jeweils
+    eigenen Portalen gesehen, d. h. viele wichtige Metadaten (u. a. Bestandsdaten) wurden
+    vascoda vorenthalten, sodass die an Bestandsnachweisen interessierte Benutzerin 
     gezwungen war, in das jeweilige fachspezifische Portal zu wechseln.
-    Unnötige Portalbrüche werden aber als verwirrend und bestenfalls als
+    Solche unnötigen Portalbrüche werden aber als verwirrend und bestenfalls als
     umständlich empfunden. Ebenso durften teilweise Schlagwörter zwar in
     vascoda indexiert und also gesucht, nicht aber zur Anzeige gebracht
     werden. Benutzer, die die eingegebenen Suchwörter nicht auch in der
     Trefferliste wiederfinden, begegnen den Ergebnissen eher skeptisch,
-    da sie anders sozialisiert sind (durch das Hervorheben von
-    Suchbegriffen in der Kurztrefferanzeige, das in fast allen
-    Internetsuchmaschinen Verwendung findet). LOD setzt den Willen zur
+    da sie an das Hervorheben von
+    Suchbegriffen in der Kurztrefferanzeige gewöhnt sind, das in fast allen
+    Internetsuchmaschinen Verwendung findet. LOD setzt den Willen zur
     Bereitstellung eigener Daten für eine freie Nutzung u.a. durch die
-    offene Lizenzierung der Daten voraus. Dadurch wird Protalbetreibern
+    offene Lizenzierung der Daten voraus. Dadurch wird Datenaggreagatoren
     größtmögliche Flexibilität bei der Einbindung der Daten
     gegeben.^[siehe dazu auch ["Datenanreicherung auf LOD-Basis"]( http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html)].
 *   Es gab im vascoda-Projekt eine Suchmaschinenföderation zwischen hbz,
     [Gesis (Bonn)](http://www.gesis.org) und der [TIB (Hannover)](http://www.tib.uni-hannover.de/). Der Schnittstelle fehlte es
-    allerdings Rankinginformationen, um die Relevanz der Treffer
-    untereinander in Bezug setzen zu können. So wurden die Treffer im
+    allerdings an Rankinginformationen, um die Relevanz der verschiedenen Treffer
+    in Beziehung setzen zu können. So wurden die Treffer im
     sogenannten Round-Robin Verfahren, also schlicht abwechselnd,
     dargestellt. Das verzerrte die Rangliste in der Trefferübersicht
     teilweise dramatisch. Eine offene Lizenzierung der
