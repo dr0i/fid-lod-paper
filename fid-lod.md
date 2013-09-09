@@ -55,10 +55,10 @@ Inhaltsverzeichnis
 ------------------
 
 1.  [Einführung](#einführung)
-2.  [Definition LOD](#definition)  
+2.  [Was ist Linked Open Data?](#lod)  
     2.1   [Offene Daten als grundlegende Anforderung](#grundlegendes)  
     2.2   [Linked Data - Best Practices](#ld)  
-3.  [Hintergrund - Erfahrungen aus vascoda](#hintergrund)
+3.  [Erfahrungen aus dem vascoda-Projekt](#vascoda)
 4.  [Cooperare necesse est](#cooperare)
 5.  [Aufgabenumsetzung](#aufgabenumsetzung)  
     5.1   [Metadatenmapping, Datentransformation und automatische
@@ -99,13 +99,12 @@ _Fachinformationsdienste für die Wissenschaft. Richtlinien
 für das DFG geförderte System der Fachinformationsdienste
 für die Wissenschaft. 2013, S. 5-6 ._
 
-Auf den Punkt "Aufbau und die Pflege komfortabler Nachweis- und
-Recherchesysteme" wird unten näher eingegangen. Den Autoren fehlt in den
-anderen Bereichen die Expertise, auch wenn LOD hier wohl einige Vorteile
-mit sich bringen kann, da auch bei der Auswahl von Ressourcen resp.
-deren Archivierung Metadaten eine wichtige Rolle spielen.
+Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe "Aufbau und die Pflege komfortabler Nachweis- und
+Recherchesysteme" und den damit verbundenen Prozessen der Datenaggregation und des Datenmanagements. Auch wenn LOD in den beiden anderen genannten Aufgabengebieten wohl einige Vorteile
+mit sich bringen kann, weil Metadate auch bei der Auswahl von Ressourcen bzw.
+deren Archivierung eine wichtige Rolle spielen - den Autoren fehlt in diesen Bereichen schlicht die nötige Expertise, so dass dieser Beitrag dazu schweigt.
 
-##<a name="definition"></a>Was ist Linked Open Data?
+## <a name="lod"></a>Was ist Linked Open Data?
 
 Die grundlegende Idee von LOD ist Offenheit. "Offenheit" gestaltet sich
 hierbei in mehreren Dimensionen:
@@ -126,7 +125,7 @@ http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html]
 
 Eine knappe, eher technische Beschreibung von LOD lautet:
 
-"Linked Open Data sind offene Daten (Open Data), die gemäß
+> "Linked Open Data sind offene Daten (Open Data), die gemäß
 Linked-Data-Prinzipien (Linked Data) unter Nutzung der entsprechenden
 offenen W3C-Standards bereitgestellt werden. Während Open Data keine
 Datenformate vorgibt, solange es sich um offen dokumentierte Formate
@@ -135,17 +134,17 @@ für die Integration von Daten in das WWW auf Basis von Standards des
 World Wide Web Consortium (W3C). Die vier von Tim
 Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe https://de.wikipedia.org/wiki/Tim_Berners_Lee]
 formulierten Linked-Data-Prinzipien lauten: 
-
-1. Benutze URIs als Namen für Dinge. 
-2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
-3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
-4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
-
-Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
+>  
+> 1. Benutze URIs als Namen für Dinge. 
+> 2. Benutze HTTP-URIs, damit Menschen die Namen nachschlagen können. 
+> 3. Wenn jemand eine URI nachschlägt, liefere nützliche Informationen auf Basis der Standards (RDF, SPARQL). 
+> 4. Verlinke zu anderen URIs, so dass mehr Dinge entdeckt werden können.
+>   
+> Linked Data baut also auf den bestehenden Web-Standards Uniform Resource
 Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
 diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."  
+Vokabularen/Ontologien."    
 _DINI-AG-KIM: LOD-Glossar. 2013._
 
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
@@ -157,8 +156,8 @@ Um technisch in der Lage zu sein, optimale Recherche- und Nachweissysteme zu bau
 sollte der Zugriff auf die nötigen Metadaten möglichst einfach und reibungslos vor sich gehen. 
 Idealerweise stellen Metadatenproduzenten ihre Daten unter einer offenen Lizenz^[D. h. es wird eine Lizenz verwendet, die kompatibel ist mit der [Open Definition](http://opendefinition.org/). Für eine Definition von offenen *bibliographischen* Daten siehe die "Prinzipien zu offenen bibliographischen Daten" unter [http://openbiblio.net/principles/de/](http://openbiblio.net/principles/de/). Ein umfangreicher rechtlicher Ratgeber zur Freigabe von Daten aus Bibliothekskatalogen ist.]
    
-Die Deutsche Nationalbibliothek und die deutschen Bibliotheksverbünde
-haben bereits mit der Freigabe von Daten begonnen. Der Bibliotheksverbund Bayern (BVB) 
+In Deutschland haben die Deutsche Nationalbibliothek (DNB) und die deutschen Bibliotheksverbünde
+haben bereits mit der Freigabe von Daten begonnen.^[Für eine Übersicht über offene Datensets im internationalen Bibliothekskontext siehe die Gruppe "Bibliographic Data" im Open-Data-Verzeichnis "The Data Hub": [http://datahub.io/group/bibliographic](http://datahub.io/group/bibliographic) .] Der Bibliotheksverbund Bayern (BVB) 
 und der Kooperative Bibliotheksverbund Berlin-Brandenburg (KOBV) sowie
 das hbz stellen ihre Daten sowohl als MARC oder MAB und auch als LOD
 bereit und bieten darüber hinaus regelmäßige Aktualisierungen an. Die
@@ -268,51 +267,38 @@ Wikidata - in die Wikipedia gelangen und dort die Verfügbarkeit einer referenzi
 IP des Nutzers ermittelte) nächstgelegenen Bibliotheken angezeigt
 wird.
 
-
-
-
-##<a name="hintergrund"></a>Hintergrund: Erfahrungen aus vascoda
+##<a name="vascoda"></a>Erfahrungen aus dem vascoda-Projekt
 
 Von 2008 bis Ende 2010 war der Autor Pascal Christoph beim hbz
 mitverantwortlich für Datentransformation und
-Suchmaschinenadministration für Vascoda. Für das Vascoda-Portal wurden
-dabei Daten aus mehr als 40 verschiedenen Quellen (SSGs, ViFas,
+Suchmaschinenadministration für vascoda. 
+Für das vascoda-Portal wurden Daten aus mehr als 40 verschiedenen Quellen (SSGs, ViFas,
 Fachportalen und auch Verbunddatenbanken) in verschiedensten Formaten
-für die Suchmaschine aufbereitet. Auch wenn in den DFG
+für die Suchmaschine aufbereitet. Auch wenn in den DFG-
 Richtlinien eine Portallösung für FIDs nicht als zwingend vorausgesetzt wird, ist es
-sinnvoll, an dieser Stelle knapp auf die Erfahrungen mit Vascoda, vor
-allem dem Voscoda-Portal, einzugehen. Mit der Anwendung von LOD Best
+sinnvoll, an dieser Stelle knapp auf die Erfahrungen mit vascoda, vor
+allem dem vascoda-Portal, einzugehen. Mit der Anwendung der LOD-Best-
 Practices durch FIDs wäre die Gefahr der Wiederholung vieler Probleme
-von Vascoda nämlich per definitionem von vornherein ausgeschlossen.
-Konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen,
-sind:
+von vascoda nämlich per definitionem von vornherein ausgeschlossen.
+Einige konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen, 
+seien im Folgenden genannt.
 
-* Oftmals wurde vascoda als bloßer Backlink-Maschine zu den jeweils
-    eigenen Portalen gesehen. D.h., viele wichtige Metadaten wurden
-    vascoda vorenthalten, u.a. Bestandsangaben, sodass die Benutzerin
+* Oftmals wurde vascoda als bloße Backlink-Maschine zu den jeweils
+    eigenen Portalen gesehen, d. h. viele wichtige Metadaten (u. a. Bestandsdaten) wurden
+    vascoda vorenthalten, sodass die an Bestandsnachweisen interessierte Benutzerin 
     gezwungen war, in das jeweilige fachspezifische Portal zu wechseln.
-    Unnötige Portalbrüche werden aber als verwirrend und bestenfalls als
+    Solche unnötigen Portalbrüche werden aber als verwirrend und bestenfalls als
     umständlich empfunden. Ebenso durften teilweise Schlagwörter zwar in
     vascoda indexiert und also gesucht, nicht aber zur Anzeige gebracht
     werden. Benutzer, die die eingegebenen Suchwörter nicht auch in der
     Trefferliste wiederfinden, begegnen den Ergebnissen eher skeptisch,
-    da sie anders sozialisiert sind (durch das Hervorheben von
-    Suchbegriffen in der Kurztrefferanzeige, das in fast allen
-    Internetsuchmaschinen Verwendung findet). LOD setzt den Willen zur
+    da sie an das Hervorheben von
+    Suchbegriffen in der Kurztrefferanzeige gewöhnt sind, das in fast allen
+    Internetsuchmaschinen Verwendung findet. LOD setzt den Willen zur
     Bereitstellung eigener Daten für eine freie Nutzung u.a. durch die
-    offene Lizenzierung der Daten voraus. Dadurch wird Protalbetreibern
+    offene Lizenzierung der Daten voraus. Dadurch wird Datenaggreagatoren
     größtmögliche Flexibilität bei der Einbindung der Daten
     gegeben.^[siehe dazu auch ["Datenanreicherung auf LOD-Basis"]( http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html)].
-*   Es gab im vascoda-Projekt eine Suchmaschinenföderation zwischen hbz,
-    [Gesis (Bonn)](http://www.gesis.org) und der [TIB (Hannover)](http://www.tib.uni-hannover.de/). Der Schnittstelle fehlte es
-    allerdings Rankinginformationen, um die Relevanz der Treffer
-    untereinander in Bezug setzen zu können. So wurden die Treffer im
-    sogenannten Round-Robin Verfahren, also schlicht abwechselnd,
-    dargestellt. Das verzerrte die Rangliste in der Trefferübersicht
-    teilweise dramatisch. Eine offene Lizenzierung der
-    Daten hätte ermöglicht, die Daten in einer zentralen Suchmaschine
-    abzulegen um ein ordentliches Ranking zu
-    haben. Ein wesentliches Problem in der Herstellung solcher suchmaschinenübergreifender Rankinginformationen lag in der damals vom hbz benutzten proprietären Suchmaschine FAST-ESP begründet: die nötigen Ranking-Algorithmen waren nicht Open Source und konnten damit schlicht nicht ermittelt werden. Seit einiger Zeit ist aber die Hardware und sind vor allem alternative Open Source Suchmaschinen soweit fortgeschritten, dass mühelos mehrere Milliarden Dokumente in diesen Open Source Suchmaschinen Platz finden und schnell durchsucht werden können.
 *   Die Softwareentwicklung rund um vascoda geschah nicht als Open
     Source. Dadurch konnte sich keine Technikergemeinschaft
     ("Community") rund um das Projekt aufbauen, um eine Nachhaltigkeit
@@ -362,24 +348,24 @@ LOD unterstützt auf der einen Seite direkt Aufbau und Pflege einer Informations
 Auf der anderen Seite fördert LOD indirekt den Aufbau einer solchen Infrastruktur , weil etwa bestimmte Arbeitsweisen (agile Entwicklung), ein offener Austausch und Kooperation oder die Nutzung von Open Source Software im LOD-Kontext weit verbreitet sind. 
 Da im Vergleich zu den konkreten Technologien die "weichen Faktoren" der Kommunikation und Organisation von grundlegenderer Wichtigkeit sind, wird im folgenden zunächst auf diese eingegangen ehe die konkrete Aufgabenumsetzung unter Nutzung von LOD angesprochen wird.
 
-### <a name="cooperare"></a>Cooperare necesse es
+## <a name="cooperare"></a>Cooperare necesse es
 
 Die umfangreichen und teilweise komplexen Aufgaben, die FIDs zu
-bewältigen haben und die Knappheit der dafür zur Verfügung stehenden
+bewältigen haben, und die Knappheit der dafür zur Verfügung stehenden
 Ressourcen legen eine Kooperation der betroffenen Einrichtungen nahe -
 nicht umsonst weist die DFG auf das Potential der Bündelung von
-Querschnittsaufgaben in Kompetenzzentren hin. Eine Umgebung aufzubauen
-zur Herstellung und Pflege eines so nachhaltigen wie innovativen Systems
+Querschnittsaufgaben in Kompetenzzentren hin. Gute Bedingungen herzustellen
+für die Herstellung und Pflege eines so nachhaltigen wie innovativen Systems
 der Informationsversorgung ist allerdings keine leichte Aufgabe.
 Konkrete Technologien spielen beim Aufbau eines solchen Systems eine
 untergeordnete Rolle, sie können seine Entstehung allenfalls
 unterstützen.  Wichtiger sind bestimmte Formen der Zusammenarbeit, der Kommunikation,
-des Teilens von Erfahrungen, Lösungen, Fehlschlägen und Erfolgen. Als
+des Teilens von Erfahrungen und Wissen. Als
 pointierte Darstellung der wichtigen Aspekte sei an dieser Stelle der
-Entwurf eines entsprechenden Manifests zitiert, das zur Beförderung
-einer entsprechenden kollaborativen Arbeitsweise für den Aufau eines
+Entwurf eines Manifests zitiert, das zur Beförderung
+einer entsprechenden kollaborativen Arbeitsweise für den Aufau einer
 zukunftsfähigen, innovativen und durch öffentliche Einrichtungen
-kontrollierten verfasst wurde: "
+kontrollierten Bibliotheks-IT-Infrastruktur verfasst wurde: "
 
 > # Libraries Empowerment Manifesto
   
@@ -403,9 +389,9 @@ Das Manifest ist auf Englisch verfasst, weil Kollaboration an
 Landesgrenzen nicht Halt macht und Erfahrungen und Lösungen, die auch
 für nicht-deutsche Institutionen von Nutzen sein könnten, im besten Fall
 auch diesen zugänglich gemacht werden sollten. Wie bereits angemerkt
-handelt es sich hierbei um einen ersten Entwurf. Alle Interessierten
-sind herzlich eingeladen, sich an der weiteren Entwicklung^[Auf dem
-Etherpad [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM) zu beteiligen].
+handelt es sich bei dem Manifest um einen Entwurf. Alle Interessierten
+sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
+Etherpad tun unter [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM).]
 
 ##<a name="aufgabenumsetzung"></a>Aufgabenumsetzung
 
@@ -417,7 +403,7 @@ Vermittler zwischen den Dienstleistern (Datenerzeugern auf der einen,
 Datenverarbeiter auf der anderen Seite) aufzutreten. In den
 DFG-Richtlinien steht dazu im Kapitel "Querschnittsaufgaben":
 
- "Im System
+> "Im System
 der Fachinformationsdienste sind für jene technisch-organisatorischen
 Arbeiten, die für die einzelnen Fachgebiete gleichartig durchzuführen
 sind und zugleich einen hohen Arbeitsaufwand und besondere Expertise
@@ -445,12 +431,12 @@ Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
 ### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische Datenanreicherung
 
 Bei jedem Dienst, der eine Recherche
-über aus verschiedenen Quellen aggregierten Daten ermöglicht, fallen
+über aus verschiedenen Quellen aggregierte Daten ermöglicht, fallen
 regelmäßig und langfristig Aufgaben im Kontext von Datenaggregation,
 Metadatenmapping, Datentransformation und -anreicherung an. Bisher haben
 meist unterschiedliche Institutionen jeweils eigene Expertisen und
-eigene Lösungen für diese Aufgaben entwickelt. Häufig findet bereits
-jetzt eine gegenseitige Unterstützung und Zusammenarbeit einiger
+eigene Lösungen für diese Aufgaben entwickelt. Häufig findet auch
+ eine gegenseitige Unterstützung und Zusammenarbeit einiger
 Insitutionen statt, indem etwa entwickelte Software-Anwendungen
 weitergegeben werden. Kooperationen finden aber meist eher unter der
 Hand und nicht transparent im Web statt.
@@ -468,7 +454,7 @@ Flexibilität und Wiederverwendungsmöglichkeit ein zentrales Anliegen.
 Für Metafacture sind die für die Datentransformationen notwendigen
 Beschreibungen von Feldüberführungen ("Mapping") in
 Konfigurationsdateien hinterlegt
-.^[Ein Beispiel zur Überführung der ZDB-Isil Datei in LOD ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml).]
+.^[Ein Beispiel zur Überführung der ZDB-ISIL Datei in LOD ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml).]
 Diese Mappingdateien werden über eine
 Workflowdatei^[Ein Beispiel dieser sog. flux-Datei ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux).]
 gesteuert. Die Adaption dieser zwei Dateien erlauben es, den kompletten
@@ -478,9 +464,9 @@ d.h. dass auch ohne Programmierkenntnisse Datentransformationen
 definiert und durchgeführt werden können.
 
 Auch für die automatische Datenanreicherung gibt es freie Software, die
-diese Aufgabe unterstützt. Z.B. können mit dem im Eu-Projekt "Lod2"
-entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/)  Zusammenführungen
-von LOD Daten durchgeführt werden. Das Projekt
+diese Aufgabe unterstützt. Z.B. können mit dem im EU-Projekt "LOD2"
+entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/) Zusammenführungen
+von LOD-Daten durchgeführt werden. Das Projekt
 ["culturegraph"](http://www.culturegraph.org) bietet ebenfalls eine
 Plattform für Datenzusammenführung. Dabei wird die Software
 ["hadoop"](https://hadoop.apache.org/) eingesetzt, die auch in lobid.org
@@ -489,14 +475,14 @@ ebenfalls durch die transparente, offene Zusammenarbeit im Bereich
 Algorithmenentwicklung. So sind z.B. erste Algorithmen zur Berechnung
 von Bündeln offen
 publiziert.^[Siehe dazu [http://hub.culturegraph.org/statistics/alg(http://hub.culturegraph.org/statistics/alg).] Alle an
-automatischer bibliographsicher Datenanreicherung Interessierte können
+automatischer bibliographsicher Datenanreicherung Interessierten können
 auf diese Algorithmen zugreifen und für eigene Zwecke nutzen.
 
 ### <a name="aufbau"></a>Aufbau von Rechercheindizes und Web-APIs
 
 Zum Aufbau von Rechercheindizes und
 APIs^[Eine API ist eine Programmierschnittstelle, die es ermöglicht, von einem Softwaresystem auf ein anderes zuzugreifen. Bei einer Web-API geschieht dies über das WWW, siehe [https://en.wikipedia.org/wiki/Web_API](https://en.wikipedia.org/wiki/Web_API).]
-eignen sich bereits vorhandenen leistungsfähige Open Source Software wie
+eignet sich bereits vorhandene leistungsfähige Open-Source-Software wie
 etwa die Suchmaschinen Solr oder elasticsearch. Technische
 Dienstleister, auch u.a. Verbünde und Bibliotheken, können teilweise die
 technische Infrastruktur bereitstellen und bei deren Nutzung
