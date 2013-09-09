@@ -178,7 +178,11 @@ in der Überlassung einer kompletten Kopie der digitalen
 Veröffentlichung, z.B. um diese in Volltextsuchmaschinen zu indexieren
 oder um sie zur automatischen Anreicherung der Metadaten
 (Klassifizierung, Verschlagwortung usw.) zu nutzen oder/und um die
-Ressource langzeitverfügbar zu machen. Die weitere Verbreitung von Open Access wäre auch für diesen Zweck sehr erfreulich.
+Ressource langzeitverfügbar zu machen. Die weitere Verbreitung von Open Access wäre
+auch für diesen Zweck sehr erfreulich, ja sogar notwendig:
+Gerade für Wissenschaftler (und also für FIDs) interessant sind Hochschulschriften und Hochschulabschlussarbeiten - diese liegen leider immer noch oft
+nicht als Open Access vor.^[Siehe dazu z.B. Graf, Klaus:
+Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert als Herausforderung für Bibliotheken. 2013.]
 
 ### <a name="ld"></a>Linked Data - Best Practices
 
@@ -688,3 +692,6 @@ Pohl, Adrian (2013): Mit der DFG und CIB nach WorldShare und Alma. Online:
 
 Weaver, Jesse; Tarjan, Paul (2012): Facebook Linked Data via the Graph API.
 [http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api](http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api)
+
+Graf, Klaus (2013): Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert als Herausforderung für Bibliotheken
+[http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)
