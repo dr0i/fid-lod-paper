@@ -158,7 +158,7 @@ _DINI-AG-KIM: LOD-Glossar. 2013._
 
 Linked Open Data ist eine Vorraussetzung für das sog. "Semantic Web". Tatsächlich lassen sich die folgenden, von Tim Berners-Lee geäußerten Wünsche mit LOD ereichen:
 
-"I have a dream for the Web [in which computers] become capable of analyzing all the data on the Web – the content, links, and transactions between people and computers. A 'Semantic Web', which should make this possible, has yet to emerge, but when it does, the day-to-day mechanisms of trade, bureaucracy and our daily lives will be handled by machines talking to machines. The 'intelligent agents' people have touted for ages will finally materialize."  
+"I have a dream for the Web [in which computers] become capable of analyzing all the data on the Web – the content, links, and transactions between people and computers."
 _Berners-Lee, Tim; Fischetti, Mark: Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor. 1999, Kapitel 12._
 
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
@@ -665,6 +665,8 @@ wissenschaftlichen Informations-Infrastruktureinrichtungen mit
 
 DINI-AG-KIM (2013): LOD-Glossar. Online: 
 [https://github.com/dini-ag-kim/publications/blob/f781263297e6f1f4acdd8b2256686c0437d047bb/glossar.md](https://github.com/dini-ag-kim/publications/blob/f781263297e6f1f4acdd8b2256686c0437d047bb/glossar.md)
+
+Berners-Lee, Tim; Fischetti, Mark: Weaving the Web. HarperSanFrancisco. 1999. ISBN 978-0-06-251587-2 .
 
 Christof, Jürgen; Wonke-Stehle, Jens (2012): 101. Bibliothekartag 2012.
 Virtuelle Fachbibliotheken - Bilanz und Ausblick . Online:
