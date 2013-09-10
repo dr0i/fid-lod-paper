@@ -73,8 +73,7 @@ Inhaltsverzeichnis
 Die ["Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft"](http://www.dfg.de/formulare/12_102/12_102_de.pdf) der Deutschen Forschungsgemeinschaft (DFG) und das damit verbundene Förderprogramm haben den Aufbau sogenannter "Fachinformationsdienste für die Wissenschaft" (FID) zum Ziel. 
 Diese FIDs sollen die bestehenden Strukturen der Sondersammelgebiete (SSG) und Virtuellen Fachbibliotheken (ViFa) zusammenführen und schließlich ersetzen. Diese von der DFG geförderten Strukturen dienen seit jeher dem Zweck der wissenschaftlichen Informationsversorgung. 
 Dementsprechend haben die FIDs zukünftig die Aufgabe, die Informationsbedürfnisse von Fachwissenschaftlerinnen und Fachwissenschaftlern zu befriedigen. 
-Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms ... die Hoffung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft dienen können".  
-_DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft. 2013, S. 4._
+Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms ... die Hoffung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft dienen können".^[_DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft. 2013, S. 4._]
 
 Die Grundannahmen dieses Artikels sind:  
 
@@ -103,10 +102,9 @@ technisch auf dem neuesten Stand gehalten werden und - durch
 vorausschauendes Engagement in der Entwicklung allgemeiner und
 fachspezifischer Informationsdienstleistungen (darunter beispielsweise
 Rechercheaufträge, Beratungsleistungen, Digitalisierung mit
-Mehrwertdiensten, Tiefenerschließung)."  
-_Fachinformationsdienste für die Wissenschaft. Richtlinien
+Mehrwertdiensten, Tiefenerschließung)."^[_Fachinformationsdienste für die Wissenschaft. Richtlinien
 für das DFG geförderte System der Fachinformationsdienste
-für die Wissenschaft. 2013, S. 5-6 ._
+für die Wissenschaft. 2013, S. 5-6 ._]
 
 Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe "Aufbau und die Pflege komfortabler Nachweis- und
 Recherchesysteme" und den damit verbundenen Prozessen der Datenaggregation und des Datenmanagements. Auch wenn LOD in den beiden anderen genannten Aufgabengebieten wohl einige Vorteile
@@ -384,7 +382,7 @@ pointierte Darstellung der wichtigen Aspekte sei an dieser Stelle der
 Entwurf eines Manifests zitiert, das zur Beförderung
 einer entsprechenden kollaborativen Arbeitsweise für den Aufau einer
 zukunftsfähigen, innovativen und durch öffentliche Einrichtungen
-kontrollierten Bibliotheks-IT-Infrastruktur verfasst wurde: "
+kontrollierten Bibliotheks-IT-Infrastruktur verfasst wurde:
 
 > # Libraries Empowerment Manifesto
   
@@ -412,7 +410,7 @@ handelt es sich bei dem Manifest um einen Entwurf. Alle Interessierten
 sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
 Etherpad tun unter [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM).]
 
-##<a name="aufgabenumsetzung"></a>Aufgabenumsetzung
+##<a name="aufgabenumsetzung"></a>Konkrete 
 
 Den FIDs wird ziemlich freie Hand dabei gelassen, die
 Informationsbedürfnisse des Wissenschaftlers zu befriedigen. Das
@@ -432,20 +430,19 @@ Umgang mit digitalen Medien. Dabei ist es ein ausdrückliches Ziel, durch
 die Aufgabenbündelung eine Entlastung zugunsten der fachlichen Arbeit in
 den einzelnen Fachinformationsdienstenzu erreichen und durch
 Synergieeffekte auch das Potential für Einsparungen optimal
-auszunutzen."  
- _DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien
+auszunutzen."^[ _DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien
 für das DFG geförderte System der Fachinformationsdienste
-für die Wissenschaft. S. 10 ._
+für die Wissenschaft. S. 10 ._]
 
 Dieser Anstoß der DFG zur Kooperation und zum Aufbau von
-Kompetenzzentren für "Querschnittsaufgaben" ist zu begrüßen. Die
-Möglichkeiten zum Aufbau von Synergien sollen im folgenden näher
+Kompetenzzentren für "Querschnittsaufgaben" ist zu begrüßen. Einige
+Möglichkeiten zur Herstellung von Synergieeffekten sollen im folgenden näher
 betrachtet werden insbesondere mit Blick auf die Arbeit mit und
 Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
 
 * [Metadatenmapping, Datentransformation und automatische Datenanreicherung](#metadatenmapping)
 * [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
-* [die intellektuelle Erstellung, Verbesserung und Anreicherung von Erschließungsinformationen](#hubs)
+* [Intellektuelle Erstellung, Verbesserung und Anreicherung von Metadaten](#hubs)
 
 ### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische Datenanreicherung
 
@@ -457,7 +454,7 @@ meist unterschiedliche Institutionen jeweils eigene Expertisen und
 eigene Lösungen für diese Aufgaben entwickelt. Häufig findet auch
  eine gegenseitige Unterstützung und Zusammenarbeit einiger
 Insitutionen statt, indem etwa entwickelte Software-Anwendungen
-weitergegeben werden. Kooperationen finden aber meist eher unter der
+weitergegeben werden. Kooperationen finden aber bisher eher unter der
 Hand und nicht transparent im Web statt.
 
 Diese Situation hat vor einiger Zeit begonnen sich zu ändern.
@@ -465,12 +462,12 @@ Mittlerweile sind mächtige Werkzeuge zur Metadatentransformation als
 freie Software im Web verfügbar. Beispiele sind das im
 [culturegraph-Projekt entwickelte
 Metafacture](https://github.com/culturegraph/metafacture-core) und das
-zentrale Tool des [LibreCat](http://librecat.org/), nämlich das Open-Source-Projekt
+zentrale Tool des [LibreCat](http://librecat.org/), nämlich die Open-Source-Software
 [Catmandu](https://github.com/LibreCat/Catmandu).
 
-Auch in den Transformationsprogrammen ist Modularität, und somit
-Flexibilität und Wiederverwendungsmöglichkeit ein zentrales Anliegen.
-Für Metafacture sind die für die Datentransformationen notwendigen
+Dem Datentransformationswerkzeug "Metafacture", das auch im hbz verwendet wird, ist Modularität und somit
+Flexibilität und Wiederverwendbarkeit ein zentrales Anliegen.
+So sind die für die Datentransformationen notwendigen
 Beschreibungen von Feldüberführungen ("Mapping") in
 Konfigurationsdateien hinterlegt
 .^[Ein Beispiel zur Überführung der ZDB-ISIL Datei in LOD ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/morph_zdb-isil-file-pica2ld.xml).]
@@ -478,24 +475,22 @@ Diese Mappingdateien werden über eine
 Workflowdatei^[Ein Beispiel dieser sog. flux-Datei ist: [https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux](https://github.com/lobid/lodmill/blob/master/lodmill-rd/src/main/resources/zdb-isil-file2lobid-organisation.flux).]
 gesteuert. Die Adaption dieser zwei Dateien erlauben es, den kompletten
 Transformationsprozess zu
-kontrollieren^[Sollte einmal eine Funktionalität fehlen, so sind die Module einfach zu programmieren und der Software zufügbar. So entstanden bisher viele Module, z.B. für das Einlesen von csv,xml,ntriples und konkreter dann Pica/MAB/MARC/LOD über verschiedene Quellen wie Dateien im Filesystem, Webseiten, OAI-PMH usw.],
-d.h. dass auch ohne Programmierkenntnisse Datentransformationen
-definiert und durchgeführt werden können.
+kontrollieren^[Sollte einmal eine Funktionalität fehlen, so sind die Module einfach zu programmieren 
+und der Software zufügbar. So entstanden bisher viele Module, z.B. für das Einlesen von
+MARC, MAB, Pica, csv, xml, ntriples. So können auch ohne Programmierkenntnisse Datentransformationen
+definiert und durchgeführt werden.
 
 Auch für die automatische Datenanreicherung gibt es freie Software, die
-diese Aufgabe unterstützt. Z.B. können mit dem im EU-Projekt "LOD2"
+diese Aufgabe unterstützt. Z. B. können mit dem im EU-Projekt "LOD2"
 entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/) Zusammenführungen
-von LOD-Daten durchgeführt werden. Das Projekt
+von LOD-Daten durchgeführt werden. 
 ["culturegraph"](http://www.culturegraph.org) bietet ebenfalls eine
-Plattform für Datenzusammenführung. Dabei wird die Software
-["hadoop"](https://hadoop.apache.org/) eingesetzt, die auch in lobid.org
-für die Datenzusammenführung Verwendung findet. Synergien entstehen hier
+Plattform für Datenzusammenführung. Synergien entstehen hier
 ebenfalls durch die transparente, offene Zusammenarbeit im Bereich
-Algorithmenentwicklung. So sind z.B. erste Algorithmen zur Berechnung
-von Bündeln offen
-publiziert.^[Siehe dazu [http://hub.culturegraph.org/statistics/alg(http://hub.culturegraph.org/statistics/alg).] Alle an
-automatischer bibliographsicher Datenanreicherung Interessierten können
-auf diese Algorithmen zugreifen und für eigene Zwecke nutzen.
+Algorithmenentwicklung. So sind z.B. erste Algorithmen Bündelung bibliographischer Ressourcen - etwa zum Zwecke der Deduplizierung oder FRBRisierung - offen
+publiziert.^[Siehe dazu [http://hub.culturegraph.org/statistics/alg](http://hub.culturegraph.org/statistics/alg).] Alle an
+automatischer bibliographischer Datenanreicherung Interessierten können
+auf diese Algorithmen zugreifen und sie für eigene Zwecke nutzen und weiterentwickeln.
 
 ### <a name="aufbau"></a>Aufbau von Rechercheindizes und Web-APIs
 
@@ -503,9 +498,9 @@ Zum Aufbau von Rechercheindizes und
 APIs^[Eine API ist eine Programmierschnittstelle, die es ermöglicht, von einem Softwaresystem auf ein anderes zuzugreifen. Bei einer Web-API geschieht dies über das WWW, siehe [https://en.wikipedia.org/wiki/Web_API](https://en.wikipedia.org/wiki/Web_API).]
 eignet sich bereits vorhandene leistungsfähige Open-Source-Software wie
 etwa die Suchmaschinen Solr oder elasticsearch. Technische
-Dienstleister, auch u.a. Verbünde und Bibliotheken, können teilweise die
-technische Infrastruktur bereitstellen und bei deren Nutzung
-unterstützen. Dabei wird das gesamte Leistungsspektrum abgedeckt, von
+Dienstleister - dazu gehören auch Bibliotheksverbünde und große Bibliotheken - können teilweise die
+nötige Infrastruktur bereitstellen und bei deren Nutzung
+unterstützen. Dabei wird teilweise das gesamte Leistungsspektrum angeboten, von
 Beratung über Installation über Hosting bis zur (Weiter-)Entwicklung. Das
 hbz bietet beispielsweise seit Kurzem seinen Verbundkatalog über eine
 selbstentwickelte LOD-Web-API an.^[Siehe [http://api.lobid.org/](http://api.lobid.org/)]. Unter
@@ -521,7 +516,7 @@ entwickelt zu werden braucht. Die zugrundeliegende modulare Technik
 erlaubt es zudem, weitere Datenquellen aufzunehmen und z.B. auch dafür
 eine Suchvervollständigung anzubieten. Möchte ein anderer Dienstleister
 diese Funktionalität auf eigenen Servern selber anbieten, so kann er auf die komplette
-Software zugreifen, um die Dienste nachzubauen und die Software
+Software - wie auch auf die Daten - zugreifen, um die Dienste nachzubauen und die Software
 weiter(mit)zuentwickeln. Schön wäre es, wenn dabei
 Softwareverbesserungen auch zurückfließen. Erfahrungen mit anderen
 Open-Source-Projekten zeigen, dass genau dies geschieht.
@@ -529,11 +524,8 @@ Open-Source-Projekten zeigen, dass genau dies geschieht.
 ### <a name="hubs"></a>Hubs zur intellektuellen Datenanreicherung
 
 Neben der sog. "weißen Literatur" gibt es "graue Literatur", also alles
-das, was nicht durch den Buchhandel vertrieben wird. Sollte, wovon
-auszugehen ist, in der Auseinandersetzung mit der Fachcommunity diese
-auch die "graue Literatur" als prinzipiell interessant betrachten, so
-stellt sich die Frage, wie ein FID auch noch diese Ressourcen
-bereitstellen kann.
+das, was nicht durch den Buchhandel vertrieben wird. Es stellt sich die Frage, wie ein FID auch noch relevante graue Literatur
+integrieren kann.
 
 Eine Sammlung fachrelevanter Ressourcen zu betreiben erfordert eine
 Menge an intellektueller Arbeit. Besonders im Bereich der grauen
