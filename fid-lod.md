@@ -4,10 +4,9 @@ Dezentral, offen, vernetzt - Überlegungen zum Aufbau eines LOD-basierten FID-Fa
 English:
 --------
 
-Title: LOD as a vehicle to build a sustainable FID metadata
-infrastructure
+Title: Decentral, open, cross-linked -  reflections on building a sustainable FID metadata infrastructure
 
-Keywords: Linked Open Data, libraries, metadata infrastructure
+Keywords: Linked Open Data, libraries, metadata infrastructure, science
 
 Abstract:
 
@@ -18,7 +17,7 @@ shows how Linked Open Data (LOD) can help with rebuilding the
 Sondersammelgebiete (SSG) to Fachinformationsführer (FID). In
 particular, the aspect of (meta-)data infrastructure is discussed. The
 thesis of this article is that LOD is predestined to build the base of a
-sustainable metadata infrastructure.
+sustainable metadata infrastructure for science.
 
 Authors:
 
@@ -31,7 +30,7 @@ Deutsch:
 --------
 
 Schlüsselwörter: Linked Open Data, Fachinformationsdienste ,
-Metadateninfrastruktur
+Metadateninfrastruktur, Wissenschaft
 
 Abstract:
 
@@ -42,9 +41,9 @@ dabei auf, wie Linked Open Data (LOD) beim Umbau der Sondersammelgebiete
 (SSG) zu Fachinformationsdiensten (FID) helfen kann. Es wird dabei
 insbesondere auf den Aspekt (Meta-)Dateninfrastruktur eingegangen. Die
 These dieses Artikels ist, dass LOD prädestiniert ist, einen wichtigen Eckpfeiler
-einer nachhaltigen Metadateninfrastruktur zu bilden.
+einer nachhaltigen Metadateninfrastruktur für die Wissenschaft zu bilden.
 
-Pascal Christoph kennt ViFas und SSGs aus seiner Arbeit von 2008-2010 am 
+Pascal Christoph kennt ViFas und SSGs aus seiner Arbeit von 2008-2011 am 
 Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen ([hbz](http://www.hbz-nrw.de/)) als technischer Umsetzer des Projekts
 ["vascoda"](http://de.wikipedia.org/wiki/Vascoda). Seit 2010 arbeitet er
 am Linked Open Data Dienst ["lobid.org"](http://lobid.org) des hbz .
@@ -62,7 +61,7 @@ Inhaltsverzeichnis
 4.  [Cooperare necesse est](#cooperare)
 5.  [Aufgabenumsetzung](#aufgabenumsetzung)  
     5.1   [Metadatenmapping, Datentransformation und automatische
-        Datenanreicherung](#metadatenmapping)  
+          Datenanreicherung](#metadatenmapping)  
     5.2   [Aufbau von Rechercheindizes und Web-APIs](#aufbau)  
     5.3   [Hubs zur intellektuellen Datenanreicherung](#hubs)  
     5.4   [Flexible Arbeitsteilung](#flexibel)  
@@ -71,13 +70,23 @@ Inhaltsverzeichnis
 
 ##<a name="einführung"></a>Einführung
 
-Die "Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft" der Deutschen Forschungsgemeinschaft (DFG) und das damit verbundene Förderprogramm haben den Aufbau sogenannter "Fachinformationsdienste für die Wissenschaft" (FID) zum Ziel. 
+Die ["Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft"](http://www.dfg.de/formulare/12_102/12_102_de.pdf) der Deutschen Forschungsgemeinschaft (DFG) und das damit verbundene Förderprogramm haben den Aufbau sogenannter "Fachinformationsdienste für die Wissenschaft" (FID) zum Ziel. 
 Diese FIDs sollen die bestehenden Strukturen der Sondersammelgebiete (SSG) und Virtuellen Fachbibliotheken (ViFa) zusammenführen und schließlich ersetzen. Diese von der DFG geförderten Strukturen dienen seit jeher dem Zweck der wissenschaftlichen Informationsversorgung. 
 Dementsprechend haben die FIDs zukünftig die Aufgabe, die Informationsbedürfnisse von Fachwissenschaftlerinnen und Fachwissenschaftlern zu befriedigen. 
-Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms ... die Hoffung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft dienen können". 
-  
-Die These dieses Artikels ist, dass Linked Open Data (LOD) einen wichtigen Beitrag dazu liefert, den Anforderungen eines flexiblen und zukunftsfähigen Systems der Informationsversorgung
-gerecht zu werden.  
+Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms ... die Hoffung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft dienen können".  
+_DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft. 2013, S. 4._
+
+Die Grundannahmen dieses Artikels sind:  
+
+ 1. Wissenschaftler wollen auf einfache Weise über neue für sie relevante Veröffentlichungen erfahren.  
+ 2. Wissenschaftler wollen möglichst einfachen Zugriff auf alle für sie relevanten Informationen.  
+ 3. Wissenschaftler wollen die von ihnen erzeugten Texte und Daten wiederum für alle Interessierten auffindbar machen.  
+ 4. Die in 1. - 3. genannten Prozesse der Informationsversorgung geschehen idealerweise über das Internet.  
+
+Die These dieses Artikels ist, dass Linked Open Data (LOD) einen wichtigen Beitrag dazu liefert,
+den Anforderungen eines flexiblen und zukunftsfähigen Systems der Informationsversorgung
+gerecht zu werden.^[Siehe dazu auch die 10 Thesen Tochtermanns (2013) ["10 Thesen zum zukünftigen Profil von
+wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler Bedeutung"](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/). Der in Tochtermanns Thesen verwendete Begriff des "Semantic Web" ist synonym zu "Linked Data" verwendet.]
 Im folgenden werden zunächst knapp die Best Practices von Linked Open Data vermittelt (Abschnitt 2). 
 Sodann werden Erfahrungen dem vascoda-Projekt geschildert und Probleme des Projekts aufgezeigt, die mit einem LOD-Ansatz hätten vermieden werden können (Abschnitt 3). 
 In Abschnitt 4 werden Entwicklungs-, Kommunikations- und Organisationsprinzipien behandelt, die in der LOD-Gemeinschaft gepflegt werden und 
@@ -121,7 +130,7 @@ Open-Source-Entwicklungen.^[Es ist dennoch zu betonen, dass es auch eine große 
 * Die *Teilnahme* ist offen für jeden, da LOD - wie das World Wide Web -
 dezentral ist. Es gilt das Motto: "Anybody can say anything about
 anything".^[zitiert nach Tim Berners Lee, 1999:
-http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html]
+[http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html](http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html)]
 
 Eine knappe, eher technische Beschreibung von LOD lautet:
 
@@ -132,7 +141,7 @@ Datenformate vorgibt, solange es sich um offen dokumentierte Formate
 handelt, geht es bei Linked Data um die Etablierung von Best Practices
 für die Integration von Daten in das WWW auf Basis von Standards des
 World Wide Web Consortium (W3C). Die vier von Tim
-Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe https://de.wikipedia.org/wiki/Tim_Berners_Lee]
+Berners-Lee^[Berners-Lee ist ein britischer Physiker und Informatiker, Erfinder von HTML und Begründer des WWW, siehe [https://de.wikipedia.org/wiki/Tim_Berners_Lee](https://de.wikipedia.org/wiki/Tim_Berners_Lee)]
 formulierten Linked-Data-Prinzipien lauten: 
 >  
 > 1. Benutze URIs als Namen für Dinge. 
@@ -144,8 +153,13 @@ formulierten Linked-Data-Prinzipien lauten:
 Identifiers (URI) und Hypertext Transfer Protocol (HTTP) auf und ergänzt
 diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsentation von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."    
+Vokabularen/Ontologien."  
 _DINI-AG-KIM: LOD-Glossar. 2013._
+
+Linked Open Data ist eine Vorraussetzung für das sog. "Semantic Web". Tatsächlich lassen sich die folgenden, von Tim Berners-Lee geäußerten Wünsche mit LOD ereichen:
+
+"I have a dream for the Web [in which computers] become capable of analyzing all the data on the Web – the content, links, and transactions between people and computers. A 'Semantic Web', which should make this possible, has yet to emerge, but when it does, the day-to-day mechanisms of trade, bureaucracy and our daily lives will be handled by machines talking to machines. The 'intelligent agents' people have touted for ages will finally materialize."  
+_Berners-Lee, Tim; Fischetti, Mark: Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor. 1999, Kapitel 12._
 
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
 
@@ -181,7 +195,7 @@ Ressource langzeitverfügbar zu machen. Die weitere Verbreitung von Open Access 
 auch für diesen Zweck sehr erfreulich, ja sogar notwendig:
 Gerade für Wissenschaftler (und also für FIDs) interessant sind Hochschulschriften und Hochschulabschlussarbeiten - diese liegen leider immer noch oft
 nicht als Open Access vor.^[Siehe dazu z.B. Graf, Klaus:
-Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert als Herausforderung für Bibliotheken. 2013.]
+[Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert als Herausforderung für Bibliotheken. 2013.]([http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)]
 
 ### <a name="ld"></a>Linked Data - Best Practices
 
@@ -261,7 +275,7 @@ eines Datensatzes beliebig.] So kann z.B. die DBpedia (also
 die LOD-Variante der Wikipedia) den auf sie zeigenden Links folgen 
 und die eigenen Daten mit z.B. Metadaten aus
 Bibliothekskatalogen anreichern.^[Der Weg dahin wurde bereits
-eingeschlagen, siehe https://github.com/dbpedia/dbpedia-links/. ] Dies eröffnet eine
+eingeschlagen, siehe [https://github.com/dbpedia/dbpedia-links/](https://github.com/dbpedia/dbpedia-links/)]. Dies eröffnet eine
 interessante Perspektive für Bibliotheken: Wenn diese Daten - z. B. über
 Wikidata - in die Wikipedia gelangen und dort die Verfügbarkeit einer referenzierten Ressource in den (durch die
 IP des Nutzers ermittelte) nächstgelegenen Bibliotheken angezeigt
@@ -299,6 +313,11 @@ seien im Folgenden genannt.
     offene Lizenzierung der Daten voraus. Dadurch wird Datenaggreagatoren
     größtmögliche Flexibilität bei der Einbindung der Daten
     gegeben.^[siehe dazu auch ["Datenanreicherung auf LOD-Basis"]( http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html)].
+* Durch die Konzentration auf das Portal als Mensch-Maschinenschnittstelle
+   wurden Maschine-Maschineschnittstellen vernachlässigt.
+   Und doch war das Interesse an den Daten groß genug, um Vascoda in das ["WorldWideScience"](https://en.wikipedia.org/wiki/WorldWideScience)-Portal einzubinden. Dies geschah mittels sog. HTML-Scrapings^[Das ist eine krude Methode, um aus einfachen, nicht extra zur Datenextraktion hergestellten HTML-Seiten strukturierte Daten zu gewinnen. Da der Aufbau von Webseiten sich ändern kann ist diese Technik instabil und von deren Einsatz abzuraten.] 
+    Erst am Ende des Projekts wurde die Einbindung einer Schnittstelle in die USB Köln testweise realisiert.
+    Im LOD Paradigma hingegen sind die Daten immer schon maschinenlesbar. D.h. nicht, dass sie bereits per se eine Schnittstelle sind, doch liegen die Daten immer strukturiert und maschinenlesbar vor, sodass die Einbettung der Daten in andere Applikationen sehr viel einfacher und stabiler ist.
 *   Die Softwareentwicklung rund um vascoda geschah nicht als Open
     Source. Dadurch konnte sich keine Technikergemeinschaft
     ("Community") rund um das Projekt aufbauen, um eine Nachhaltigkeit
@@ -489,7 +508,7 @@ technische Infrastruktur bereitstellen und bei deren Nutzung
 unterstützen. Dabei wird das gesamte Leistungsspektrum abgedeckt, von
 Beratung über Installation über Hosting bis zur (Weiter-)Entwicklung. Das
 hbz bietet beispielsweise seit Kurzem seinen Verbundkatalog über eine
-selbstentwickelte LOD-Web-API an.^[Siehe [http://api.lobid.org/] (http://api.lobid.org/).] Unter
+selbstentwickelte LOD-Web-API an.^[Siehe [http://api.lobid.org/](http://api.lobid.org/)]. Unter
 dieser API, die sich sehr einfach in eigene Anwendungen über das WWW
 einbinden lässt, findet sich auch die GND, auf die mittels
 [Vorschlagsuche](https://de.wikipedia.org/wiki/Vorschlagssuche) nach
@@ -598,22 +617,22 @@ Entscheidung für einen der beiden Ansätze finden müssen. "
 _Wissenschaftsrat: Übergreifende Empfehlungen zu
 Informationsinfrastrukturen. 2011, S. 54 ._
 
-Zwar unterstützt die DFG lediglich die Migration der Verbünde in
+Zwar unterstützt die DFG lediglich [die Migration der Verbünde in
 vorhandene Datenbanken wie WorldCat und ExLibris
-Alma^[Siehe http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html],
+Alma](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html)^[Siehe http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html],
 doch stimmt erste die Aussage des Wissenschaftsrates nicht ganz (auch der
-WorldCat veröffentlicht seine Daten als Linked Data und auch bei
+WorldCat veröffentlicht seine Daten als Linked Data und auch [bei
 ExLibris gibt es Bewegung in diese
-Richtung^[Siehe http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/]
+Richtung](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/)^[Siehe http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/]
 und lassen sich 2. viele zusätzliche Dienste und Dienstleistungen, wie
 z.B. die Integration in das WWW oder in
 Internetsuchmaschinen ohne Linked Data gar nicht oder nur
 umständlich bewerkstelligen.^[Siehe dazu z.B.
 [Schema.org](https://en.wikipedia.org/wiki/Schema.org), dass von den
 großen Internetsuchmaschinenbetreibern initiiert wurde, um die Webseiten
-für Maschinen mittels Linked Data besser verstehbar zu machen. Einige
+für (Such-)Maschinen mittels Linked Data besser verstehbar zu machen. Einige
 ViFas haben schon begonnen, Schema.org in ihre Portale zu integrieren,
-z.B. http://edoc.vifapol.de. [Econstor](http://linkeddata.econstor.eu/),
+z.B. [http://edoc.vifapol.de](http://edoc.vifapol.de). [Econstor](http://linkeddata.econstor.eu/),
 ein Dokumentenserver der ViFas,
 bietet aus diesem Grund schon seit geraumer Zeit Linked Data an.] Deshalb zeigt dieser Artikel warum,
 unabhängig von der Entscheidung gegen die Förderung einer
