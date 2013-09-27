@@ -586,8 +586,7 @@ Institutionen unterzeichnen können. Alle Interessierten
 sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
 Etherpad tun unter [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM).]
 
-##<a name="aufgabenumsetzung"></a>Konkrete Kooperationsmöglichkeiten bei
-Querschnittsaufgaben
+##<a name="aufgabenumsetzung"></a>Konkrete Kooperationsmöglichkeiten bei Querschnittsaufgaben
 
 Den FIDs wird ziemlich freie Hand dabei gelassen, die
 Informationsbedürfnisse des Wissenschaftlers zu befriedigen. Das
