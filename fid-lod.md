@@ -235,7 +235,11 @@ der GND, der zweite Eintrag verknüpft das Dokument mit der Personen ID.
 Alle weiteren Daten (multilinguale natürlichsprachige Bezeichnung des
 Schlagwortes, Lebensdaten des Autors usw.) müssen nicht mit in das Dokument
 aufgenommen werden, sondern sind, da sie im WWW bereits vorliegen, von
-dort automatisiert abrufbar.^[Das heißt natürlich nicht, dass diese verlinkten Daten verschwunden sind und nicht angezeigt werden können, sobald der verlinkte Service - aufgrund von Server- oder sonstigen Probleme - nicht mehr am Netz ist. Auch bei Linked Data verhindern etablierte Technologien wie das Caching oder auch eine lokale Indexierung solche Probleme.]
+dort automatisiert abrufbar.^[Das heißt natürlich nicht, dass diese 
+verlinkten Daten verschwunden sind und nicht angezeigt werden können, 
+sobald der verlinkte Service - aufgrund von Server- oder sonstigen Probleme - 
+nicht mehr am Netz ist. Auch bei Linked Data verhindern etablierte Technologien 
+wie das Caching oder auch eine lokale Indexierung solche Probleme.]
 In einem LOD-["Graphen"](https://de.wikipedia.org/wiki/Graph_%28Graphentheorie%29)
 gibt es per se keinen von vornherein abgeschlossenen Datensatz, da alles mit allem
 verknüpft sein kann und somit weder Anfang noch Ende hat. Datenproduzenten und
@@ -406,7 +410,9 @@ Das Manifest ist auf Englisch verfasst, weil Kollaboration an
 Landesgrenzen nicht Halt macht und Erfahrungen und Lösungen, die auch
 für nicht-deutsche Institutionen von Nutzen sein könnten, im besten Fall
 auch diesen zugänglich gemacht werden sollten. Wie bereits angemerkt
-handelt es sich bei dem Manifest um einen Entwurf. Alle Interessierten
+handelt es sich bei dem Manifest um einen Entwurf, um einen Vorschlag, 
+der mit anderen zu einer Version überarbeitet werden soll, die dann erste 
+Institutionen unterzeichnen können. Alle Interessierten
 sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
 Etherpad tun unter [http://etherpad.lobid.org/p/LEM](http://etherpad.lobid.org/p/LEM).]
 
@@ -604,7 +610,7 @@ Der Wissenschaftsrat schreibt 2011:
 > Der Wissenschaftsrat bekräftigt seine Empfehlung, dass die
 > bibliothekarischen Verbünde im Interesse der Wissenschaft sowie ihrer
 > eigenen Zukunftsfähigkeit rasch zu einer abgestimmten strategischen
-> Entscheidung für einen der beiden Ansätze finden müssen. "  
+> Entscheidung für einen der beiden Ansätze finden müssen."   
 _Wissenschaftsrat: Übergreifende Empfehlungen zu
 Informationsinfrastrukturen. 2011, S. 54 ._
 
