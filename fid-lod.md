@@ -862,53 +862,40 @@ gestellten Aufgaben passt.
 
 ##<a name="referenzen"></a>Referenzen
 
-DFG (2013): Fachinformationsdienste für die Wissenschaft. Richtlinien
-für das DFG geförderte System der Fachinformationsdienste
-für die Wissenschaft. DFG-Vordruck
-12.102 - 03/13. URL:
-[http://www.dfg.de/formulare/12\_102/12\_102\_de.pdf](http://www.dfg.de/formulare/12_102/12_102_de.pdf).
+Berners-Lee, Tim (2009): On the next web. URL:
+[http://www.ted.com/talks/tim\_berners\_lee\_on\_the\_next\_web.html](http://www.ted.com/talks/tim_berners_lee_on_the\_next_web.html).
 
-Wissenschaftsrat (2011): Übergreifende Empfehlungen zu
-Informationsinfrastrukturen. URL:
-[http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf](http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf).
-
-DFG (2013): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler Informationsservices.
-In: Information für die Wissenschaft Nr. 11 | 15. März 2013.
-URL:
-[http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html).
-
-Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open Data .
-URL:
-[http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/).
-
-Tochtermann, Klaus (2013): 10 Thesen zum zukünftigen Profil von
-wissenschaftlichen Informations-Infrastruktureinrichtungen mit
-überregionaler Bedeutung. URL:
-[http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/).
-
-DINI AG KIM (2013): LOD-Glossar. URL:
-[http://git.io/2CPrvQ](http://git.io/2CPrvQ).
-
-Berners-Lee, Tim; Fischetti, Mark (1999): Weaving the Web. The Original Design and
-Ultimate Destiny of the World Wide Web by Its Inventor. HarperSanFrancisco. ISBN
-978-0-06-251587-2.
+Berners-Lee, Tim; Fischetti, Mark (1999): Weaving the Web. The Original Design
+and Ultimate Destiny of the World Wide Web by Its Inventor. HarperSanFrancisco.
+ISBN 978-0-06-251587-2.
 
 Christof, Jürgen; Wonke-Stehle, Jens (2012): 101. Bibliothekartag 2012.
 Virtuelle Fachbibliotheken - Bilanz und Ausblick . URL:
 [http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick](http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick).
 
+Christoph, Pascal (2013): Datenanreicherung auf LOD-Basis. In: (Open) Linked
+Data in Bibliotheken S. 139-167. ISBN: 978-3-11-027634-3. URL:
+[http://www.dr0i.de/lib/pages/Datenanreicherung\_auf\_LOD\_Basis.html](http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html).
+
 Depping, Ralf (2012): 101. Bibliothekartag 2012 . Sondersammelgebiete im
 elektronischen Zeitalter. URL:
 [http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter](http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter).
 
-DINI AG KIM (2013): Empfehlung für die RDF-Repräsentation bibliografischer Daten (Textressourcen). URL: [https://wiki.dnb.de/x/cYMOB](https://wiki.dnb.de/x/cYMOB).
+DFG (2013): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
+Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März
+2013. URL:
+[http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html).
+DFG (2013): Fachinformationsdienste für die Wissenschaft. Richtlinien für das
+DFG geförderte System der Fachinformationsdienste für die Wissenschaft.
+DFG-Vordruck 12.102 - 03/13. URL:
+[http://www.dfg.de/formulare/12\_102/12\_102\_de.pdf](http://www.dfg.de/formulare/12_102/12_102_de.pdf).
 
-Berners-Lee, Tim (2009): On the next web. URL:
-[http://www.ted.com/talks/tim\_berners\_lee\_on\_the\_next\_web.html](http://www.ted.com/talks/tim_berners_lee_on_the\_next_web.html).
+DINI AG KIM (2013): Empfehlung für die RDF-Repräsentation bibliografischer
+Daten (Textressourcen). URL:
+[https://wiki.dnb.de/x/cYMOB](https://wiki.dnb.de/x/cYMOB).
 
-Christoph, Pascal (2013): Datenanreicherung auf LOD-Basis. In: (Open) Linked Data
-in Bibliotheken S. 139-167. ISBN: 978-3-11-027634-3. URL:
-[http://www.dr0i.de/lib/pages/Datenanreicherung\_auf\_LOD\_Basis.html](http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html).
+DINI AG KIM (2013): LOD-Glossar. URL:
+[http://git.io/2CPrvQ](http://git.io/2CPrvQ).
 
 Diverse (2013): Massively-Multiplayer\_Online\_Bibliography.
 [https://meta.wikimedia.org/wiki/Massively-Multiplayer\_Online\_Bibliography](https://meta.wikimedia.org/wiki/Massively-Multiplayer\_Online\_Bibliography).
@@ -917,16 +904,29 @@ Governor, James (2007): Why Applications Are Like Fish and Data is Like Wine.
 URL:
 [http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/](http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/).
 
+Graf, Klaus (2013): Schlechte Bücher? Publikationsmöglichkeiten im 21.
+Jahrhundert als Herausforderung für Bibliotheken
+[http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)
+
+Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open Data . URL:
+[http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/).
+
 Kreutzer, Till (2011): Open Data – Freigabe von Daten aus Bibliothekskatalogen.
-Ein Leitfaden. Hg. v. Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen.
-URL: [http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf](http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf)
+Ein Leitfaden. Hg. v. Hochschulbibliothekszentrum des Landes
+Nordrhein-Westfalen. URL:
+[http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf](http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf)
 
 Pohl, Adrian (2013): Mit der DFG und CIB nach WorldShare und Alma. URL:
 [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html)
 
+Tochtermann, Klaus (2013): 10 Thesen zum zukünftigen Profil von
+wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler
+Bedeutung. URL:
+[http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/).
+
 Weaver, Jesse; Tarjan, Paul (2012): Facebook Linked Data via the Graph API.
 [http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api](http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api)
 
-Graf, Klaus (2013): Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert
-als Herausforderung für Bibliotheken
-[http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)
+Wissenschaftsrat (2011): Übergreifende Empfehlungen zu
+Informationsinfrastrukturen. URL:
+[http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf](http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf)
