@@ -359,10 +359,10 @@ Bibliothekskatalogen anreichern.^[Der Weg dahin wurde bereits
 eingeschlagen, siehe
 [https://github.com/dbpedia/dbpedia-links/](https://github.com/dbpedia/dbpedia-links/).]
 Dies eröffnet eine
-interessante Perspektive für Bibliotheken: So könnte man sich vorstellen, dass
-- sobald diese Daten in die Wikipedia gelangt sind - in einzelnen Artikeln die Verfügbarkeit einer referenzierten
+interessante Perspektive für Bibliotheken: So könnte man sich vorstellen, 
+dass - sobald diese Daten in die Wikipedia gelangt sind - in einzelnen Artikeln die Verfügbarkeit einer referenzierten
 Ressource in den (durch die
-IP des Nutzers ermittelte) nächstgelegenen Bibliotheken angezeigt
+IP des Nutzers ermittelten) nächstgelegenen Bibliotheken angezeigt
 wird.
 
 ##<a name="vascoda"></a>Erfahrungen aus dem vascoda-Projekt
@@ -615,8 +615,7 @@ Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
 * [Aufbau von Rechercheindizes und Web-APIs](#aufbau)
 * [Intellektuelle Erstellung, Verbesserung und Anreicherung von Metadaten](#hubs)
 
-### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische
-Datenanreicherung
+### <a name="metadatenmapping"></a>Metadatenmapping, Datentransformation und automatische Datenanreicherung
 
 Bei jedem Dienst, der eine Recherche
 über Daten aus verschiedenen Quellen ermöglicht, fallen
