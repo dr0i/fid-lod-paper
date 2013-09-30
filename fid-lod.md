@@ -771,9 +771,9 @@ beschriebenen Prozesskette kann jeder FID sich entscheiden, an welcher
 Stelle er die notwendigen Arbeiten selbst umsetzt und welche Leistungen
 als "Querschnittsdienste" an Dienstleister abgegeben
 werden. Dies betrifft Auswahl der Daten, Datentransformation und
-(moderierte) automatische Datenanreicherung, Veröffentlichung der Daten
+(halb)automatische Datenanreicherung, Veröffentlichung der Daten
 als LOD, die Indexierung in spezielle Datenhaltungssysteme, die
-Bereitstellung offener W3C Standards entsprechenden APIs über diese
+Bereitstellung von APIs über diese
 Datenhaltungssysteme, und die diese APIs einbindenden Nachweis- und
 Recherchesysteme und Portale. Durch diese Modularität und strikte
 Trennung von Daten, Datenhaltung und
@@ -786,8 +786,9 @@ erhalten und werden nicht "vergessen" wenn ein Portal, ein
 Nachweissystem oder eine API abgeschaltet oder ausgetauscht wird, da die
 Daten nicht zu eng an diese Komponenten gekoppelt sind: "Data is stable – functions
 are not".
-Die Nachhaltigkeit bleibt auf jeden Fall in den Daten erhalten. Dadurch ist
-ein Lehre aus [James Governors Bonmot "Data matures like Wine,
+Durch diese Entkoppelung der Daten von den sie verarbeitenden Systemen wird
+erst Nachhaltigkeit im Umgang mit Daten sichergestellt. Mit dieser Praxis wird
+eine Lehre aus [James Governors Bonmot "Data matures like Wine,
 Applications like
 Fish"](http://redmonk.com/jgovernor/2007/04/05/why-applications-are-like-fish-and-data-is-like-wine/)
 ("Daten altern wie Wein, Anwendungen wie Fisch")^[Governor, James (2007): Why
