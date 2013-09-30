@@ -4,7 +4,7 @@ Dezentral, offen, vernetzt - Überlegungen zum Aufbau eines LOD-basierten FID-Fa
 English:
 --------
 
-Title: Decentral, open, cross-linked -  reflections on building a sustainable FID
+Title: Decentral, open, linked -  reflections on building a sustainable FID
 metadata infrastructure
 
 Keywords: Linked Open Data, libraries, metadata infrastructure, science
@@ -35,7 +35,7 @@ Metadateninfrastruktur, Wissenschaft
 
 Abstract:
 
-Dieser Artikel reflektiert die Richtlinien für das DFG geförderte
+Dieser Artikel reflektiert die "Richtlinien für das DFG geförderte
 System der Fachinformationsdienste für die
 Wissenschaft" und zeigt
 dabei auf, wie Linked Open Data (LOD) beim Umbau der Sondersammelgebiete
@@ -44,13 +44,13 @@ insbesondere auf den Aspekt (Meta-)Dateninfrastruktur eingegangen. Die
 These dieses Artikels ist, dass LOD prädestiniert ist, einen wichtigen Eckpfeiler
 einer nachhaltigen Metadateninfrastruktur für die Wissenschaft zu bilden.
 
-Pascal Christoph kennt ViFas und SSGs aus seiner Arbeit von 2008-2011 am
+*Pascal Christoph* kennt ViFas und SSGs aus seiner Arbeit von 2008-2011 am
 Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen ([hbz](http://www.hbz-nrw.de/))
 als technischer Umsetzer des Projekts
 ["vascoda"](http://de.wikipedia.org/wiki/Vascoda). Seit 2010 arbeitet er
 am Linked-Open-Data-Dienst ["lobid"](http://lobid.org) des hbz .
 
-Adrian Pohl arbeitet seit 2008 im Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
+*Adrian Pohl* arbeitet seit 2008 im Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen
 (hbz). Sein Fokus liegt auf dem Bereich Linked Open Library Data und dabei insbesondere
 auf dem Aufbau und der Pflege des LOD-Service lobid. Seit Juni 2010 ist Adrian Koordinator
 der OKFN Working Group on Open Bibliographic Data.
@@ -87,15 +87,36 @@ Diese FIDs sollen die bestehenden Strukturen der Sondersammelgebiete (SSG) und V
 Fachbibliotheken (ViFa) zusammenführen und schließlich ersetzen.
 
 Diese von der DFG
-geförderten Strukturen dienen der wissenschaftlichen Informationsversorgung. 
-Dementsprechend haben die FIDs zukünftig die Aufgabe, die Informationsbedürfnisse
-von Fachwissenschaftlerinnen und Fachwissenschaftlern zu befriedigen. 
-Die DFG verbindet mit "der Verabschiedung des neu ausgerichteten Förderprogramms
+geförderten Strukturen dienen der wissenschaftlichen Informationsversorgung.
+Die DFG verbindet dementsprechend mit "der Verabschiedung des neu ausgerichteten Förderprogramms
 ... die Hoffnung, dass die 'Fachinformationsdienste für die Wissenschaft' als ein
 flexibles und zukunftsfähiges System der Informationsversorgung der Wissenschaft
 dienen können".^[DFG: Fachinformationsdienste für die Wissenschaft. Richtlinien
 für das DFG geförderte System der Fachinformationsdienste für die Wissenschaft.
 2013, S. 4.]
+
+Konkret nennen die Richtlinien der DFG folgende Kernaufgaben von
+Fachinformationsdiensten:
+
+> "Die Fachinformationsdienste gewährleisten eine optimale Versorgung -
+> durch die überregionale Bereitstellung und Archivierung relevanter
+> gedruckter und digitaler Medien und Fachinformationen, - durch den
+> Aufbau und die Pflege komfortabler Nachweis- und Recherchesysteme, die
+> technisch auf dem neuesten Stand gehalten werden und - durch
+> vorausschauendes Engagement in der Entwicklung allgemeiner und
+> fachspezifischer Informationsdienstleistungen (darunter beispielsweise
+> Rechercheaufträge, Beratungsleistungen, Digitalisierung mit
+> Mehrwertdiensten, Tiefenerschließung)."^[Fachinformationsdienste für die 
+Wissenschaft. Richtlinien für das DFG geförderte System der 
+Fachinformationsdienste für die Wissenschaft. 2013, S. 5-6 .]
+
+Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe
+"Aufbau und die Pflege komfortabler Nachweis- und
+Recherchesysteme" und den damit verbundenen Prozessen der Datenaggregation und des
+Datenmanagements. LOD mag in den beiden anderen genannten Aufgabengebieten auch einige Vorteile
+mit sich bringen, weil Metadaten auch bei der Auswahl von Ressourcen bzw.
+deren Archivierung eine wichtige Rolle spielen - den Autoren fehlt in diesen Bereichen
+aber die nötige Expertise, so dass dieser Beitrag dazu schweigt.
 
 Die Grundannahmen dieses Artikels sind:  
 
@@ -114,10 +135,11 @@ gerecht zu werden.^[Siehe dazu auch Tochtermann, Klaus (2013): 10 Thesen
 zum zukünftigen Profil von
 wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler
 Bedeutung. URL:
-[http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/).
+[http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/),
+insbesondere 6, 7 und 9.
 Der in Tochtermanns Thesen verwendete Begriff des "Semantic Web" ist synonym zu
 "Linked Data" verwendet.]
-Im Folgenden werden zunächst knapp die Best Practices von Linked Open Data vermittelt
+Im Folgenden werden zunächst knapp die Grundlagen von Linked Open Data vermittelt
 (Abschnitt 2). 
 Sodann werden Erfahrungen aus dem vascoda-Projekt geschildert und Probleme des Projekts
 aufgezeigt, die mit einem LOD-Ansatz hätten vermieden werden können (Abschnitt 3).
@@ -125,38 +147,13 @@ aufgezeigt, die mit einem LOD-Ansatz hätten vermieden werden können (Abschnitt
 In Abschnitt 4 werden Entwicklungs-, Kommunikations- und Organisationsprinzipien
 behandelt, die in der LOD-Gemeinschaft gepflegt werden und 
 den kollaborativen Aufbau einer nachhaltigen und flexiblen Informationsinfrastruktur
-begünstigen. Abschnitt 6 setzt sich mit konkreten Bereichen im Kontext des Metadatenmanagements
-auseinander, in denen eine Kooperation besonders sinnvoll ist. {...}
- 
-Konkret nennen die Richtlinien der DFG folgende Kernaufgaben von
-Fachinformationsdiensten:
-
-"Die Fachinformationsdienste gewährleisten eine optimale Versorgung -
-durch die überregionale Bereitstellung und Archivierung relevanter
-gedruckter und digitaler Medien und Fachinformationen, - durch den
-Aufbau und die Pflege komfortabler Nachweis- und Recherchesysteme, die
-technisch auf dem neuesten Stand gehalten werden und - durch
-vorausschauendes Engagement in der Entwicklung allgemeiner und
-fachspezifischer Informationsdienstleistungen (darunter beispielsweise
-Rechercheaufträge, Beratungsleistungen, Digitalisierung mit
-Mehrwertdiensten, Tiefenerschließung)."^[Fachinformationsdienste für die Wissenschaft.
-Richtlinien
-für das DFG geförderte System der Fachinformationsdienste
-für die Wissenschaft. 2013, S. 5-6 .]
-
-Dieser Text befasst sich nur mit der Umsetzung der zweiten genannte Kernaufgabe
-"Aufbau und die Pflege komfortabler Nachweis- und
-Recherchesysteme" und den damit verbundenen Prozessen der Datenaggregation und des
-Datenmanagements. Auch wenn LOD in den beiden anderen genannten Aufgabengebieten
-wohl einige Vorteile
-mit sich bringen kann, weil Metadaten auch bei der Auswahl von Ressourcen bzw.
-deren Archivierung eine wichtige Rolle spielen - den Autoren fehlt in diesen Bereichen
-schlicht die nötige Expertise, so dass dieser Beitrag dazu schweigt.
+begünstigen. Abschnitt 5 setzt sich mit konkreten Aspekten des Metadatenmanagements
+auseinander, in denen eine Kooperation besonders sinnvoll ist. Mit einem
+abschließenden Fazit in Abschnitt 6 endet der Beitrag.
 
 ## <a name="lod"></a>Was ist Linked Open Data?
 
-Die grundlegende Idee von LOD ist Offenheit. "Offenheit" gestaltet sich
-hierbei in mehreren Dimensionen:
+Die grundlegende Idee von LOD ist Offenheit. "Offenheit" findet sich dabei in mehreren Dimensionen:
 
 * Die *Lizenz* ist offen, d.h. die
 Daten dürfen von jedem verändert und nachgenutzt werden.
@@ -172,7 +169,7 @@ an proprietären Softwarelösungen gibt - insbesondere bei sogenannten "Triple S
 oder Graphdatenbanken.]
 * Die *Teilnahme* ist offen für jeden, da LOD - wie das World Wide Web -
 dezentral ist. Es gilt das Motto: "Anybody can say anything about
-anything".^[zitiert nach Tim Berners Lee, 1999:
+anything".^[Zitiert nach Tim Berners Lee, 1999:
 [http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html](http://lists.w3.org/Archives/Public/www-rdf-interest/1999Dec/0113.html)]
 
 Eine knappe, eher technische Beschreibung von LOD lautet:
@@ -200,29 +197,26 @@ diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsenta
 von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS
 sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."^[DINI-AG-KIM (2013): LOD-Glossar.
+Vokabularen/Ontologien."^[DINI-AG-KIM (2013): Glossar.
 URL:[http://git.io/YWNx8w](http://git.io/YWNx8w)]
 
-Linked Open Data ist eine Voraussetzung für das sog. "Semantic Web". Tatsächlich
-lassen sich die folgenden, von Tim Berners-Lee geäußerten Wünsche mit LOD erreichen:
-
-"I have a dream for the Web [in which computers] become capable of analyzing all
-the data on the Web – the content, links, and transactions between people and
-computers."^[Berners-Lee, Tim; Fischetti, Mark(1999): Weaving the Web. The Original Design and Ultimate
-Destiny of the World Wide Web by Its Inventor. Kapitel 12.]
+Dieser Text wird die genannten Linked-Data-Technologien nicht näher erläutern. Für
+weitergehende Informationen sei verwiesen auf das Glossar der DINI AG KIM^[Ebd.] und den kürzlich erschienenen Beitrag von Adrian Pohl
+und Patrick Danowski "Linked Open Data in der Bibliothekswelt: Grundlagen und
+Überblick".^[Pohl, Adrian / Danowski, Patrick (2013): Linked Open Data in der
+Bibliothekswelt: Grundlagen und Überblick. In: Dies. (Hg.) (2013): (Open) Linked Data in 
+Bibliotheken. Walter de Gruyter GmbH, Berlin/Boston, S.1-44.]
 
 ### <a name="grundlegendes"></a>Offene Daten als grundlegende Anforderung
 
 Grundlage eines jeden Fachinformationssystems sind Aufbau und Pflege des *Bestand*s,
-
-um Zugriff auf relevante Ressourcen ermöglichen zu können sowie die 
+um Zugriff auf relevante Ressourcen ermöglichen zu können sowie die
 *Metadaten* für Nachweis- und Recherchesysteme, so dass eine Ressource überhaupt
 aufgefunden werden kann.
 Um technisch in der Lage zu sein, optimale Recherche- und Nachweissysteme zu bauen,
-
 sollte der Zugriff auf die nötigen Metadaten möglichst einfach und reibungslos vor
 sich gehen. 
-Idealerweise stellen Metadatenproduzenten ihre Daten unter eine offene Lizenz^[D.
+Idealerweise stellen Metadatenproduzenten ihre Daten unter eine offene Lizenz.^[D.
 h. es wird eine Lizenz verwendet, die kompatibel ist mit der [Open Definition](http://opendefinition.org/).
 Für eine Definition von offenen *bibliographischen* Daten siehe die "Prinzipien
 zu offenen bibliographischen Daten" unter [http://openbiblio.net/principles/de/](http://openbiblio.net/principles/de/).
@@ -243,14 +237,14 @@ bereit und bieten darüber hinaus regelmäßige Aktualisierungen an. Die
 DNB bietet den größten Teil ihrer Daten unter einer offenen Lizenz an
 mit einjähriger ["Moving
 Wall"](https://en.wikipedia.org/wiki/Moving_wall). Für bestimmte Fächer
-lässt sich damit u. U. bereits ein guter FID-Recherchedienst aufbauen.
+lässt sich mit diesem Angebot an offenen Daten u. U. bereits ein guter FID-Recherchedienst aufbauen.
 Dabei sind Monographiedaten ganz gut abgedeckt, oft fehlen
 aber Artikelmetadaten und graue Literatur. Damit das "web of data"
 Realität wird, müssen weitere Daten geöffnet werden. Und dies geschieht
 am besten dort, wo diese Daten originär anfallen.
 
 Möglichst viele Verlage, Ersteller von Fachbibliographien, die FIDs selbst und andere
-Metadatenprovider sollten 
+Metadatenprovider sollten ebenfalls
 dazu übergehen, ihre Metadaten sowie andere für die Recherche nützliche Daten
 (wie z. B. Inhaltsverzeichnisse und Abstracts) als
 Open Data unter CC0 zur Verfügung zu stellen. Ein weiterer wichtiger Schritt bestünde
@@ -259,12 +253,10 @@ Veröffentlichung, z.B. um diese in Volltextsuchmaschinen zu indexieren
 oder um sie zur automatischen Anreicherung der Metadaten
 (Klassifizierung, Verschlagwortung usw.) zu nutzen oder/und um die
 Ressource langzeitverfügbar zu machen. Die weitere Verbreitung von Open Access wäre
-auch für diesen Zweck sehr erfreulich, ja sogar notwendig:
-Gerade für Wissenschaftler (und also für FIDs) interessant sind Hochschulschriften
-und Hochschulabschlussarbeiten - diese liegen oft leider immer noch
-nicht als Open Access vor.^[Siehe dazu z.B. Graf, Klaus (2013):
+auch für diesen Zweck sehr erfreulich, ja sogar notwendig. Leider liegen zur
+Zeit oft nicht einmal Hochschulschriften als Open Access vor.^[Siehe dazu z.B. Graf, Klaus (2013):
 [Schlechte Bücher? Publikationsmöglichkeiten im 21. Jahrhundert als Herausforderung
-für Bibliotheken.]([http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)]
+für Bibliotheken]([http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/).]
 
 ### <a name="ld"></a>Linked Data - Best Practices
 
@@ -288,61 +280,62 @@ Aussagen gemacht wie "Buch X hat den Autor Y" und "Autor Y wurde geboren
 im Jahr Z".
 
 Anders als bei Datenbanken, die im "deep web" versteckt sind, kann bei
-LOD jede zum gemeinsamen Datenpool etwas beitragen - denn, wer eine Webseite anlegen
+LOD jeder zum gemeinsamen Datenpool etwas beitragen - denn, wer eine Webseite anlegen
 kann, kann auch LOD herstellen und
 Informationen dem "web of data" hinzufügen. So wächst die LOD-Cloud, und zwar vor
-allem durch Verlinkung. Ein Beispiel: Wissenschaftler A schreibt einen Artikel B
+allem durch Verlinkung. Ein Beispiel: Wissenschaftlerin A schreibt einen Artikel B
 der
 Artikel C referenziert und Wissenschaftler D widerspricht. Diese
 Referenzen sind nichts anderes als Verlinkungen zwischen A und B, B und C und
 C und D, jeweils mit einer spezifizierten semantischen Relation.
 Werden diese Beziehungen in dem Artikel als LOD hinterlegt^[Z. B. durch
-RDFa in HTML oder XMP in PDF/A] und erhält der Artikel einen HTTP-URI und
+RDFa in HTML oder XMP in PDF/A.] und erhält der Artikel einen HTTP-URI und
 ist also Teil des WWW, dann ist damit die LOD Datenbank gewachsen.
-^[Auf diese Weise ließe sich auch recht einfach aussagekräftigere Metriken berechnen:
+^[Auf diese Weise ließe sich auch recht einfach aussagekräftigere Metriken
+berechnen wie z. B.:
 Wie oft wurde Artikel A referenziert und mit welcher Absicht (Widerspruch/Kritik,
 Zustimmung)? Wie oft wurden die Artikel, die Artikel A referenzieren, referenziert?
-Mit welchen Schlagworten sind die Ressourcen versehen? Usw.].
+Mit welchen Schlagworten sind die Ressourcen versehen?]
   
 Auf Basis einer großen Menge dezentral gepflegter, untereinander vernetzter Daten
 sind Abfragen wie "gib mir alle Dokumente, die von Personen
 geschrieben wurden, die im 16 Jhd. geboren sind und mit 'Chemie'
 verschlagwortet sind" einfach realisierbar. Dabei ist es
-ausreichend, einem lediglich zwei Aussagen ("RDF-Tripel") über ein Dokument hinzuzufügen:
+ausreichend, einem Metadatensatz lediglich zwei Aussagen ("RDF-Tripel") über ein Dokument hinzuzufügen:
 Der eine Eintrag verknüpft das Dokument mit einer
-LOD fähigen Schlagwortdatei, z.B. der Dewey Decimal Classification oder
+LOD-fähigen Schlagwortdatei, z.B. der Dewey Decimal Classification oder
 der GND, der zweite Eintrag verknüpft das Dokument mit der Personen ID.
 Alle weiteren Daten (multilinguale natürlichsprachige Bezeichnung des
 Schlagwortes, Lebensdaten des Autors usw.) müssen nicht mit in das Dokument
 aufgenommen werden, sondern sind, da sie im WWW bereits vorliegen, von
-dort automatisiert abrufbar.^[Das heißt natürlich nicht, dass diese 
-verlinkten Daten verschwunden sind und nicht angezeigt werden können, 
-sobald der verlinkte Service - aufgrund von Server- oder sonstigen Probleme - 
-nicht mehr am Netz ist. Auch bei Linked Data verhindern etablierte Technologien 
+dort automatisiert abrufbar.^[Sollte der verlinkte Service - aufgrund von Server- oder sonstigen Probleme - 
+nicht mehr am Netz sein, heißt das natürlich nicht, dass diese 
+verlinkten Daten verschwunden sind und nicht angezeigt werden können. Auch bei
+Linked Data verhindern etablierte Technologien 
 wie das Caching oder auch eine lokale Indexierung solche Probleme.]
 In einem LOD-["Graphen"](https://de.wikipedia.org/wiki/Graph_%28Graphentheorie%29)
 gibt es per se keinen von vornherein abgeschlossenen Datensatz, da alles mit allem
 verknüpft sein kann und somit weder Anfang noch Ende hat. Datenproduzenten und
 -konsumenten müssen selbst entscheiden, wo ein Datensatz anfangen und wo er
 sinnvollerweise aufhören soll, welche Daten als vertrauenswürdig angesehen werden
-und welche vielleicht z.B. Spam
+und welche etwa Spam
 sind.^[Da die Daten global verfügbar sind wird zukünftig immer weniger redundant
 mehrfachkatalogisiert. Die Arbeit wird aber nicht weniger, sondern verlagert sich
 in Richtung Moderation und Selektion von Daten aus dem "web of data".] 
 Das Datenmodell von LOD lässt also unbegrenzte neue Aussagen zu, während bei
 herkömmlichen Austauschformaten die maximale Größe eines
 Titeldatensatzes festgelegt
-ist^[bei MAB2 und MARC sind das 9999 Bytes]. Für LOD
+ist.^[Bei MAB2 und MARC sind das 9999 Bytes.] Für LOD
 gibt es auch keine Beschränkung der möglichen Informationsdichte eines Metadatensatzes,
 also dessen, was in den herkömmlichen Datenmodellen die
 Metadatenfelder sind. Zwar lassen sich auch den überkommenen, für Magnetbänder optimierten
 Datenstrukturen aus den 1960er/1970er Jahren
 neue Felder teilweise durch mühselige Standardisierungsprozesse hinzufügen
-und teilweise auch beliebig und lokal definieren (was zu Inkompatibilität der Kataloge
+und teilweise auch beliebig lokal definieren (was zu Inkompatibilität der Kataloge
 führt),
 doch sind diese "Format"-Beschreibungen nicht offen und funktionieren
 deshalb im besten Fall nur in ihrem begrenzten System: der Bibliothekswelt.
-Die Metadaten der Bibliothekswelt sind aber viel zu wichtig, d. h. nützlich,
+Die Metadaten der Bibliothekswelt sind aber viel zu wichtig,
 um sie nicht in das WWW zu integrieren. Sie sind dafür auch
 besonders gut geeignet: Tatsächlich existiert bereits in den älteren Austauschformaten
 MAB/MARC/PICA 
@@ -350,9 +343,7 @@ eine große Anzahl von Verlinkungen (zwischen Titeldatensätzen, zwischen Titel-
 Normdatensätzen) gerade im deutschsprachigen Raum.
 
 So, wie das WWW dezentral aufgebaut ist und es viele verschiedene
-Webseitenbetreiber gibt - wenn sich auch immer wieder einige zentrale
-Dienste herausbilden wie aktuell etwa Google, Facebook, Wikipedia oder
-Amazon), so liegen auch die verlinkten offenen Daten verteilt im
+Webseitenbetreiber gibt, so liegen auch die verlinkten offenen Daten verteilt im
 Netz. Dieses LOD wird von verschiedenen Interessenten
 aggregiert und integriert, sei es um in eigenen internen Datenbanken "zu
 verschwinden", um neue Webanwendungen herzustellen oder/und um wiederum
@@ -365,10 +356,11 @@ eines Datensatzes beliebig.] So kann z.B. die DBpedia (also
 die LOD-Variante der Wikipedia) den auf sie zeigenden Links folgen 
 und die eigenen Daten mit z.B. Metadaten aus
 Bibliothekskatalogen anreichern.^[Der Weg dahin wurde bereits
-eingeschlagen, siehe [https://github.com/dbpedia/dbpedia-links/](https://github.com/dbpedia/dbpedia-links/)].
+eingeschlagen, siehe
+[https://github.com/dbpedia/dbpedia-links/](https://github.com/dbpedia/dbpedia-links/).]
 Dies eröffnet eine
-interessante Perspektive für Bibliotheken: Wenn diese Daten - z. B. über
-Wikidata - in die Wikipedia gelangen und dort die Verfügbarkeit einer referenzierten
+interessante Perspektive für Bibliotheken: So könnte man sich vorstellen, dass
+- sobald diese Daten in die Wikipedia gelangt sind - in einzelnen Artikeln die Verfügbarkeit einer referenzierten
 Ressource in den (durch die
 IP des Nutzers ermittelte) nächstgelegenen Bibliotheken angezeigt
 wird.
@@ -385,9 +377,9 @@ für die Suchmaschine aufbereitet. Auch wenn in den DFG-
 Richtlinien eine Portallösung für FIDs nicht als zwingend vorausgesetzt wird, ist
 es
 sinnvoll, an dieser Stelle knapp auf die Erfahrungen mit vascoda, vor
-allem dem vascoda-Portal, einzugehen. Mit der Anwendung der LOD-Best-
-Practices durch FIDs wäre die Gefahr der Wiederholung vieler Probleme
-von vascoda nämlich per definitionem von vornherein ausgeschlossen.
+allem dem vascoda-Portal, einzugehen. Mit der Anwendung der LOD-Best-Practices
+durch FIDs wäre die Gefahr der Wiederholung vieler Probleme
+von vascoda nämlich von vornherein ausgeschlossen.
 Einige konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen, 
 seien im Folgenden genannt.
 
@@ -402,12 +394,13 @@ werden. Benutzer, die die eingegebenen Suchwörter nicht auch in der
 Trefferliste wiederfinden, begegnen den Ergebnissen eher skeptisch,
 da sie an das Hervorheben von
 Suchbegriffen in der Kurztrefferanzeige gewöhnt sind, das in fast allen
-Internetsuchmaschinen Verwendung findet. LOD setzt den Willen zur
-Bereitstellung eigener Daten für eine freie Nutzung u.a. durch die
+Internetsuchmaschinen üblich ist. LOD setzt den Willen zur
+Bereitstellung eigener Daten für eine freie Nutzung u. a. durch die
 offene Lizenzierung der Daten voraus. Dadurch wird Datenaggregatoren
 größtmögliche Flexibilität bei der Einbindung der Daten
 gegeben.^[Siehe dazu Christoph, Pascal (2013): Datenanreicherung auf LOD-Basis.
-In: (Open) Linked Data in Bibliotheken S. 139-167. Preprint:
+In: Danowski, Patrick / Pohl, Adrian (Hg.): (Open) Linked Data in
+Bibliotheken, S. 139-167. Preprint:
 [http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html](http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html)].   
    
 Durch die Konzentration auf das vascoda-Portal als Mensch-Maschinenschnittstelle
@@ -419,8 +412,8 @@ Daten zu gewinnen. Da der Aufbau von Webseiten sich ändern kann ist diese Techn
 instabil und von deren Einsatz abzuraten.]
 Erst am Ende des Projekts wurde die Einbindung in Dienste der USB
 Köln über eine Schnittstelle testweise realisiert.
-Gemäß dem LOD-Paradigma hingegen sind die Daten immer schon maschinenlesbar. D.h. nicht,
-dass sie bereits per se eine Schnittstelle sind, doch liegen die Daten immer strukturiert
+Gemäß dem LOD-Paradigma hingegen sind die Daten immer schon maschinenlesbar.
+D.h. die Daten liegen per definitionem strukturiert
 und maschinenlesbar vor, sodass die Einbettung der Daten in andere Applikationen
 sehr viel einfacher und stabiler ist.  
   
@@ -429,23 +422,23 @@ Source. Dadurch konnte sich keine Technikergemeinschaft
 ("Community") rund um das Projekt aufbauen, wodurch eine nachhaltige
 Entwicklung verhindert wurde. Ganz anders verhält es sich bei Werkzeugen, 
 die im Umkreis von LOD entstehen, sei es [culturegraph.org](http://culturegraph.org),
-die LOD-Graphdatenbanken wie Virtuoso, 4store usw., LOD-kompatible 
+die LOD-Graphdatenbanken wie Virtuoso, 4store, LOD-kompatible 
 Suchmaschinen wie elasticsearch, Datenanreicherungswerkzeuge wie
-SILK, Datenaustauschplattformen wie
-datahub oder die Werkzeuge der von der DFG geförderten [AKSW in Leipzig](http://aksw.org)
-etc. Natürlich gibt es auch einige proprietäre Angebote, doch existieren immer auch leistungsfähige
+SILK, oder die Werkzeuge der von der DFG geförderten Forschungsgruppe "Agile
+Knowledge Engineering and Semantic Web" ([AKSW](http://aksw.org)) in Leipzig.
+ Natürlich gibt es auch einige proprietäre Angebote, doch existieren immer auch leistungsfähige
 Open-Source-Software-Alternativen, die sogar meist kostenlos
 verteilt werden, dafür aber auch meist mit kostenpflichtigen Serviceangeboten
 daherkommen.   
    
 Anders als im vascoda-Projekt, anders als wohl generell früher im
 Umfeld von bibliothekarischen Institutionen, begünstigt LOD eine
-weniger hierarchisch und zentralistisch "top-down" strukturierte
+weniger hierarchisch und zentralistisch strukturierte
 Arbeitsweise. Es eignet sich hervorragend als Basis zum Aufbau einer
 verteilten Community mit flachen Hierarchien. Ein gutes Beispiel
 liefert die Entstehung eines gemeinsamen Metadatenschemas für
 bibliographische Daten im deutschsprachigen Raum: Den verschiedenen
-LOD-Produzenten (DNB, hbz, BVB, Hebis, zbw u.a.) wurde zu keinem
+LOD-Produzenten (DNB, hbz, BVB, Hebis u. a.) wurde zu keinem
 Zeitpunkt ein gemeinsames Metdatenschema oktroyiert, sondern es hat
 sich durch "Best Practices"-Konventionen herausgebildet, die
 mittlerweile - organisiert innerhalb der DINI-AG-KIM-Gruppe
@@ -480,7 +473,7 @@ Kooperation oder die Nutzung von Open-Sourc-Software im LOD-Kontext weit verbrei
 sind. 
 Da im Vergleich zu den konkreten Technologien die "weichen Faktoren" der Kommunikation
 und Organisation von grundlegenderer Wichtigkeit sind, wird im folgenden zunächst
-auf diese eingegangen, ehe die konkrete Aufgabenumsetzung unter Nutzung von LOD angesprochen
+auf diese näher eingegangen, ehe die konkrete Aufgabenumsetzung unter Nutzung von LOD angesprochen
 wird.
 
 ## <a name="cooperare"></a>Cooperare necesse est
@@ -490,7 +483,7 @@ bewältigen haben, und die Knappheit der dafür zur Verfügung stehenden
 Ressourcen legen eine Kooperation der betroffenen Einrichtungen nahe -
 nicht umsonst weist die DFG auf das Potential der Bündelung von
 Querschnittsaufgaben in Kompetenzzentren hin. Gute Bedingungen herzustellen
-für die Herstellung und Pflege eines so nachhaltigen wie innovativen Systems
+für den Aufbau und die Pflege eines so nachhaltigen wie innovativen Systems
 der Informationsversorgung ist allerdings keine leichte Aufgabe.
 Konkrete Technologien spielen beim Aufbau eines solchen Systems eine
 untergeordnete Rolle, sie können seine Entstehung allenfalls
@@ -523,7 +516,7 @@ on  the web, according to the requirements of the [Free Software Definition](htt
 and the [Open Definition](http://opendefinition.org/) and the best practices of
 the wider web community.
 > * *Transparency*. Rules of conduct, project plans, minutes, plans for new features,
-and other artifacts are open, public, and easily accessible
+and other artifacts are open, public, and easily accessible.
 > * *Inclusion*. Our projects are open to all; we provide the  same opportunity
 to all. Everyone participates with the same rules; there are no rules to exclude
 any potential contributors which include, of course, direct  competitors in the
@@ -533,8 +526,7 @@ Leadership roles are also merit-based and earned by peer acclaim.
 > * *Reuse*.  We actively seek for solutions others have  developed for a specific
 problem and are happy to reuse and adapt them for our context.
 > * *Credit*. We [give credit where credit is
-> due](http://blog.ninapaley.com/2011/06/27/credit-is-due/)^[Siehe
-> [http://blog.ninapaley.com/2011/06/27/credit-is-due/](http://blog.ninapaley.com/2011/06/27/credit-is-due/).].
+> due](http://blog.ninapaley.com/2011/06/27/credit-is-due/).^[[http://blog.ninapaley.com/2011/06/27/credit-is-due/](http://blog.ninapaley.com/2011/06/27/credit-is-due/)]
 >   
 > We  know that libraries, archives, museums, and related organizations can't change
 from one day to the next. Nonetheless, we seek to organize our work according to
@@ -546,7 +538,7 @@ Landesgrenzen nicht Halt macht und Erfahrungen und Lösungen, die auch
 für nicht-deutsche Institutionen von Nutzen sein könnten, im besten Fall
 auch diesen zugänglich gemacht werden sollten.
 
-Die einzelnen Punkte des Manifests seien hier kurz auf Deutsch erläutert:
+Die einzelnen Punkte des Manifests seien hier kurz auf Deutsch erläutert:   
 - *Offenheit* ('Openness') im Hinblick auf die rechtliche Seite der Lizenzierung von
  Software, Daten und Inhalten ermöglicht erst die reibungslose Übernahme und
  Anpassung andernorts entstandener Lösungen.^[Eine
@@ -556,7 +548,7 @@ Die einzelnen Punkte des Manifests seien hier kurz auf Deutsch erläutert:
  oder
  [edu-sharing](http://edu-sharing.net/portal/web/edu-sharing.com/produkt)^[[http://edu-sharing.net/portal/web/edu-sharing.com/produkt](http://edu-sharing.net/portal/web/edu-sharing.com/produkt)]
  zeigen, wie öffentliche Einrichtungen
- private Unternehmen beauftragen können, um Open-Source-Software zu entwickeln.]
+ private Unternehmen beauftragen können, um Open-Source-Software zu entwickeln.]  
 - *Transparenz* ('Transparency') ermöglicht es Außenstehenden, einen detaillierten Überblick über
   ein Projekt, die dabei entstandenen Probleme und betretenen
   Irrwege sowie über seine Erfolge und Errungenschaften zu bekommen und die
@@ -564,7 +556,7 @@ Die einzelnen Punkte des Manifests seien hier kurz auf Deutsch erläutert:
 - *Inklusion* ('Inclusion') steht für die soziale Offenheit, die interessierten
   Personen Partizipationsmöglichkeiten in einem Projekt verschafft.  
 - *Meritokratie* ('Meritocracy') bedeutet, dass Entscheidungen nicht auf der Basis von
-  Hierarchien, sondern von Erfahrung und Expertise getroffen werden.
+  Hierarchien, sondern von Erfahrung und Expertise getroffen werden.  
 - *Wiederverwendung* ('reuse') als leitendes Prinzip stellt sicher, dass die
   Nutzung und Anpassung andernorts entwickelter Lösungen Priorität besitzt vor
   der Eigenentwicklung, wodurch das weit verbreitete
@@ -572,15 +564,18 @@ Die einzelnen Punkte des Manifests seien hier kurz auf Deutsch erläutert:
   „Not-invented-here-Syndrom“. In: Wikipedia, Die freie Enzyklopädie.
   Bearbeitungsstand: 1. April 2013, 02:23 UTC. URL:
   http://de.wikipedia.org/w/index.php?title=Not-invented-here-Syndrom&oldid=116429841
-  (Abgerufen: 27. September 2013, 13:05 UTC) ] überwunden werden soll.
+  (Abgerufen: 27. September 2013, 13:05 UTC).] überwunden werden soll.  
 - *Namensnennung* ('credit') stellt sicher, dass bei der Wiederverwendung
-  andernorts entstandener Daten, Inhalte oder Software, die Urheber
-  entsprechend gewürdigt werden.^[Dies entspricht der wissenschaftlichen
+  andernorts entstandener Daten, Inhalte oder Software die Urheber
+  entsprechend aufgeführt werden.^[Dies entspricht der wissenschaftlichen
   Praxis, deren Entstehungsgeschichte und Sanktionsmechanismen unabhängig vom
   Urheberrecht sind.]
 
+Wir denken, dass dieses Manifest die wichtigsten Eigenschaften einer
+kooperativen Arbeitsweise für Aufbau und Betrieb einer innovativen,
+nachhaltigen und unabhängigen Metadatenökologie nennt.
 Wie bereits angemerkt
-handelt es sich bei dem Manifest um einen Entwurf, um einen Vorschlag, 
+handelt es sich bei dem Manifest aber um einen Entwurf, um einen Vorschlag, 
 der mit anderen zu einer Version überarbeitet werden soll, die dann erste 
 Institutionen unterzeichnen können. Alle Interessierten
 sind herzlich eingeladen, sich an der weiteren Entwicklung zu beteiligen.^[Wer das Manifest mit weiterentwickeln möchte, kann dies leicht auf einem
@@ -624,7 +619,7 @@ Bereitstellung von Daten. Es geht also vor allem um folgende Aufgaben:
 Datenanreicherung
 
 Bei jedem Dienst, der eine Recherche
-über aus verschiedenen Quellen aggregierte Daten ermöglicht, fallen
+über Daten aus verschiedenen Quellen ermöglicht, fallen
 regelmäßig und langfristig Aufgaben im Kontext von Datenaggregation,
 Metadatenmapping, Datentransformation und -anreicherung an. Bisher haben
 meist unterschiedliche Institutionen jeweils eigene Expertisen und
@@ -637,13 +632,13 @@ Hand und nicht transparent im Web statt.
 Diese Situation ändert sich seit einiger Zeit.
 Mittlerweile sind mächtige Werkzeuge zur Metadatentransformation als
 freie Software im Web verfügbar. Beispiele sind das im
-[culturegraph-Projekt entwickelte
-Metafacture](https://github.com/culturegraph/metafacture-core) und das
+culturegraph-Projekt entwickelte
+Metafacture^[[(https://github.com/culturegraph/metafacture-core]((https://github.com/culturegraph/metafacture-core)] und das
 zentrale Tool des [LibreCat](http://librecat.org/), nämlich die Open-Source-Software
-[Catmandu](https://github.com/LibreCat/Catmandu).
+Catmandu^[https://github.com/LibreCat/Catmandu](https://github.com/LibreCat/Catmandu).
 
-Dem Datentransformationswerkzeug "Metafacture", das auch im hbz verwendet wird,
-ist Modularität und somit
+Bei der Entwicklung des Datentransformationswerkzeugs "Metafacture", das auch im hbz verwendet wird,
+war Modularität und somit
 Flexibilität und Wiederverwendbarkeit ein zentrales Anliegen.
 So sind die für die Datentransformationen notwendigen
 Beschreibungen von Feldüberführungen ("Mapping") in
@@ -651,15 +646,15 @@ Konfigurationsdateien hinterlegt
 .^[Ein Beispiel zur Überführung der ZDB-ISIL Datei in LOD ist:
 [http://git.io/6mgZrA](http://git.io/6mgZrA).]
 Diese Mappingdateien werden über eine
-Workflowdatei^[Ein Beispiel dieser sog. flux-Datei ist:
+Workflowdatei^[Beispiel einer sog. flux-Datei:
 [http://git.io/2nV4ng](http://git.io/2nV4ng).]
 gesteuert. Die Adaption dieser zwei Dateien erlauben es, den kompletten
 Transformationsprozess zu
-kontrollieren^[Sollte einmal eine Funktionalität fehlen, so sind die Module einfach
+kontrollieren.^[Sollte einmal eine Funktionalität fehlen, so sind die Module einfach
 zu programmieren 
 und der Software zufügbar. So entstanden bisher viele Module, z.B. für das Einlesen
 von
-MARC, MAB, Pica, csv, xml, ntriples. So können auch ohne Programmierkenntnisse Datentransformationen
+MARC, MAB, Pica, csv, xml, ntriples.] So können auch ohne Programmierkenntnisse Datentransformationen
 definiert und durchgeführt werden.
 
 Auch für die automatische Datenanreicherung gibt es freie Software, die
@@ -667,10 +662,10 @@ diese Aufgabe unterstützt. Z. B. können mit dem im EU-Projekt "LOD2"
 entwickelten [Silk](http://lod2.eu/Project/Silk.html) und auch mit [Limes](http://limes.aksw.org/)
 Zusammenführungen
 von LOD-Daten durchgeführt werden. 
-["culturegraph"](http://www.culturegraph.org) bietet ebenfalls eine
+Auch ["culturegraph"](http://www.culturegraph.org) bietet eine
 Plattform für Datenzusammenführung. Synergien entstehen hier
 ebenfalls durch die transparente, offene Zusammenarbeit im Bereich
-Algorithmenentwicklung. So sind z.B. erste Algorithmen Bündelung bibliographischer
+Algorithmenentwicklung. So sind z.B. erste Algorithmen zur Bündelung bibliographischer
 Ressourcen - etwa zum Zwecke der Deduplizierung oder FRBRisierung - offen
 publiziert.^[Siehe dazu [http://hub.culturegraph.org/statistics/alg](http://hub.culturegraph.org/statistics/alg).]
 Alle an
@@ -685,15 +680,14 @@ auf ein anderes zuzugreifen. Bei einer Web-API geschieht dies über das WWW, sie
 [https://en.wikipedia.org/wiki/Web_API](https://en.wikipedia.org/wiki/Web_API).]
 eignet sich bereits vorhandene leistungsfähige Open-Source-Software wie
 etwa die Suchmaschinen Solr oder elasticsearch. Technische
-Dienstleister - dazu gehören auch Bibliotheksverbünde und große Bibliotheken - können die
-nötige Infrastruktur bereitstellen und bei deren Nutzung
+Dienstleister - dazu gehören auch Verbundzentralen und große Bibliotheken - können die
+nötige Infrastruktur bereitstellen und andere bei der Nutzung dieser Infrastrukur
 unterstützen. Dabei wird teilweise das gesamte Leistungsspektrum angeboten, von
 Beratung über Installation und Hosting bis zur (Weiter-)Entwicklung. Das
 hbz bietet beispielsweise seit Kurzem seinen Verbundkatalog über eine
-selbstentwickelte LOD-Web-API an.^[Siehe [http://api.lobid.org/](http://api.lobid.org/)].
-Unter
-dieser API, die sich sehr einfach in eigene Anwendungen über das WWW
-einbinden lässt, findet sich auch die GND, auf die mittels
+selbstentwickelte LOD-API an.^[Siehe [http://api.lobid.org/](http://api.lobid.org/)]
+Bestandteil dieser API, die sich sehr einfach in eigene Anwendungen über das WWW
+einbinden lässt, sind auch Daten der Gemeinsamen Normdatei (GND), auf die mittels
 [Vorschlagsuche](https://de.wikipedia.org/wiki/Vorschlagssuche) nach
 Autoren gesucht werden kann, um auf diese Weise die für die Person
 eindeutige GND-ID zu bekommen. Diese API steht jedem offen und kann z.B.
@@ -717,32 +711,27 @@ das, was nicht durch den Buchhandel vertrieben wird. Es stellt sich die Frage, w
 ein FID auch noch relevante graue Literatur
 integrieren kann.
 
-Eine Sammlung fachrelevanter Ressourcen zu betreiben erfordert eine
-Menge an intellektueller Arbeit. Besonders im Bereich der grauen
+Eine Sammlung fachrelevanter Ressourcen zu betreiben erfordert viel
+intellektuelle Arbeit. Besonders im Bereich der grauen
 Literatur, die teilweise gar nicht erschlossen oder nur mit
 unzureichenden Metadaten ausgestattet ist, ist deshalb der Einsatz von
 sog. [Crowdsourcing](https://de.wikipedia.org/wiki/Crowdsourcing)^[...also dem Einsatz
 von freiwilligen Benutzern.]
-unverzichtbar, vor allem durch die regelrechte "Wissensexplosion" dieser
-Ressourcen durch die Entwicklung des Internets. Denn der Nutzer steht
-nicht einfach vor einer immer größeren Informationsflut, sondern sieht
+unverzichtbar, vor allem vor dem Hintergrund der rapiden Zunahme an solchen
+Quellen. Damit steht der Nutzer nicht einfach vor einer immer größeren Informationsflut, sondern sieht
 sich einer mit ihm interaktiv agierenden Gemeinschaft von
 Gleichgesinnten gegenüber, die bereitwillig und getragen durch ebenjenes
 Medium "Internet" an der Organisation dieses Wissens mithelfen
 kann.^[Beispiele von funktionierendem Crowdsourcing sind u.a. Wikipedia, Amazon,
-IMDB. Früher war z.B. auch dmoz recht beliebt. Bei dmoz werden Internetquellen intellektuell
-erschlossen. In Hochzeiten hatte dieser Dienst mehrere 10.000 aktive freiwillige
-Mitarbeiter. Bis jetzt sind 4.8 Millionen Seiten katalogisiert. Seit Gründung 1998
-sind die erzeugten Daten offen und können so von anderen Diensten übernommen werden.
-Google hat die Daten bis 2011 genutzt.]
+IMDB. Früher war z. B. auch dmoz recht beliebt.]
 Wenn diese Wissensorganisation dann nach LOD Prinzipien geschieht, dann
 sind die Ergebnisse dieser Wissensorganisation maschinell komfortabel
 verarbeitbar - die Informationsflut lässt sich also tatsächlich
 beherrschen. Die Wikimedia Foundation hat das erkannt, und mit
 Wikidata^[Siehe [https://de.wikipedia.org/wiki/Wikidata](https://de.wikipedia.org/wiki/Wikidata)]
 eine Infrastruktur
-geschaffen, mit derer die Wikipedia nach LOD-Prinzipien katalogisiert
-wird.^[Im Wikimedia-Kontext ist mit der ["Massively-Multiplayer_Online_Bibliography"](https://meta.wikimedia.org/wiki/Massively-Multiplayer_Online_Bibliography
+geschaffen, mit derer Teile der Wikipedia nach LOD-Prinzipien strukturiert
+werden.^[Im Wikimedia-Kontext ist mit der ["Massively-Multiplayer_Online_Bibliography"](https://meta.wikimedia.org/wiki/Massively-Multiplayer_Online_Bibliography
 ) eine recht neue Projektidee entstanden. Dabei geht es darum, mit Hilfe Freiwilliger (der
 "Crowd") Millionen von frei verfügbaren Essays und Artikeln usw. nach LOD Prinzipien
 zu annotieren. Auch wenn dieses Projekt vielleicht gar nicht starten wird oder auch,
@@ -751,7 +740,7 @@ so ist dieses Projekt doch eine interessante Blaupause für ein Modell, wie grau
 akademische Literatur gesammelt werden kann. In dieses Projektmodell passen nämlich
 hervorragend Bibliothekare oder eben FIDs mit ihrem Wissen. Sie können z.B. dabei
 helfen, Taxonomien für die Texte bereitzustellen oder, bei fehlenden Taxonomien,
-diese Erstellen. Andere Menschen in dem Projekt werden Katalogisierungswerkzeuge
+diese erstellen. Andere Menschen in dem Projekt werden Katalogisierungswerkzeuge
 zur Verfügung stellen, in denen diese Taxonomien eingebunden sind, sodass sie vom
 Katalogisierer (der "Crowd") per Drop-Down-Menü und durch multilinguale Vorschlagssuchen
 kategorisiert werden können. Danach können die so kategorisierten Ressourcen automatisch
@@ -760,8 +749,8 @@ sie der fachspezifischen Sammlung nach einem Moderationsprozess hinzuzufügen. D
 Information, also das Kategorisieren einer Ressource zu einem FID, ist wiederum
 eine interessante, aussagekräftiges Information, die der ursprünglichen Ressourcenbeschreibung
 zugefügt wird. Somit fließt die moderierende, qualitätssichernde Kontrolle der Fachprofis
-in die Ausgangsdaten zurück und sind von allen anderen, die diese Daten konsumieren,
-nachnutzbar. Im LOD Paradigma erzeugt also die Nutzung einer Leistung potentiell
+in die Ausgangsdaten zurück, wovon alle anderen, die diese Daten konsumieren,
+profitieren. Im LOD Paradigma erzeugt also die Nutzung einer Leistung potentiell
 einen Mehrwert für die Leistung. Es handelt sich um eine sog. Selbstverstärkung.]
 
 ### <a name="flexibel"></a>Flexible Arbeitsteilung
@@ -801,91 +790,83 @@ URL:
 
 Es wurde gezeigt, warum eine LOD-Metadateninfrastruktur nachhaltig ist
 und wie diese zum Aufbau von FIDs-Dienstleistungen genutzt werden kann
-um z.B. bessere Recherche- und Nachweissysteme zu ermöglichen und die
+um z. B. bessere Recherche- und Nachweissysteme zu ermöglichen und die
 Daten in das WWW resp. in das "web of data" zu integrieren. Zudem wurde
 erläutert, dass große Teile dieser Infrastruktur bereits vorhanden
 oder in Entwicklung sind. Entscheidend für diese Metadateninfrastruktur
 ist, dass die Daten samt zeitnahen Updates offen lizensiert zur
 Verfügung stehen. Die Daten sind die Grundlage der Infrastruktur. Die
-Technik, also Datentransformation, die Bereitstellung der Daten als LOD
-und somit die Integration der Daten in das WWW, Discovery Systeme und
-Portale, auch die Datenhaltung an sich resp. die Archivierung usw. ist
+Technik zur Datenhaltung, -transformation, -publikation und Recherche ist
 das geringere Problem - die Datenbeschaffung bleibt die größte
 Herausforderung. Hier können und sollten die FIDs eine entscheidende
-Rolle übernehmen. Der Ansatz birgt aber auch ein Risiko, da bisher die
-Investition in eigenentwickelte Gemeinschaftslösungen als kritisch für  einen
-späteren nachhaltigen Betrieb gesehen wurde und stattdessen meist kommerziele und
-propriietäre Lösungen bevorzugt wurden.^[Vgl. Pohl, Adrian (2013): Mit der DFG
+Rolle übernehmen.
+
+Der Ansatz birgt aber auch ein Risiko, da die DFG die
+Investition in eigenentwickelte Gemeinschaftslösungen für eine
+Informationsinfrastruktur als kritisch für einen
+späteren nachhaltigen Betrieb gesehen hat und stattdessen eher kommerzielle und
+proprietäre Lösungen bevorzugte.^[Vgl. Pohl, Adrian (2013): Mit der DFG
 und CIB nach WorldShare und Alma. URL: [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html).]
 
-Der Wissenschaftsrat schreibt 2011:
-
-> "Die Integration von Katalogdaten in Metadatenbanken setzt international
-> gültige Standards voraus. Im Bibliotheksbereich werden derzeit zwei
-> verschiedene, nicht kompatible Ansätze praktiziert: die Zusammenführung
-> von Katalogdaten in einer bibliographischen Datenbank, z.B. WorldCat ,
-> welche die Kataloge mehrerer tausend, auch deutscher
-> OCLC-Mitgliedsbibliotheken umfasst, sowie die Bereitstellung von
-> Katalogdaten in Form in das offene Web integrierter Linked Open Data .
-> Der Wissenschaftsrat bekräftigt seine Empfehlung, dass die
-> bibliothekarischen Verbünde im Interesse der Wissenschaft sowie ihrer
-> eigenen Zukunftsfähigkeit rasch zu einer abgestimmten strategischen
-> Entscheidung für einen der beiden Ansätze finden müssen."^[Wissenschaftsrat
-> (2011): Übergreifende Empfehlungen zu Informationsinfrastrukturen. URL:
-> [http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf](http://www.wissenschaftsrat.de/
-> download/archiv/10466-11.pdf).]
-
 Zwar unterstützt die DFG lediglich [die Migration der Verbünde in
-vorhandene Datenbanken wie WorldCat und ExLibris
+vorhandene proprietäre Datenbanken wie OCLCs WorldShare und ExLibris'
 Alma](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html)^[Siehe
-[http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html)],
-doch stimmt erstens die Aussage des Wissenschaftsrates nicht ganz (auch der
-WorldCat veröffentlicht seine Daten als Linked Data und auch bei
-ExLibris gibt es Bewegung in diese
-Richtung^[Siehe Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open
-Data . URL: [http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/).]
-und zweitens lassen sich viele zusätzliche Dienste und Dienstleistungen, wie
+DFG (2013a): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
+Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März
+2013. URL:
+[http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html).]
+gleichzeitig veröffentlicht OCLC die WorldCat-Daten auch als Linked Data und auch bei
+ExLibris gibt es seit längerem Bewegung in diese
+Richtung.^[Siehe Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open
+Data . URL:
+[http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/)
+und die Linked-Open-Data-Arbeitsgruppe von Ex-Libris-Kunden: Joint IGELU/ELUNA
+Special Interest Working Group on Linked Open Data, URL:
+[http://igelu.org/special-interests/lod](http://igelu.org/special-interests/lod).]
+Es zeigt sich, dass sich viele zusätzliche Dienste und Dienstleistungen, wie
 z.B. die Integration in das WWW oder in
 Internetsuchmaschinen ohne Linked Data gar nicht oder nur
-umständlich bewerkstelligen.^[Siehe dazu z.B.
+umständlich bewerkstelligen lassen.^[Siehe dazu z.B.
 [Schema.org](https://en.wikipedia.org/wiki/Schema.org), dass von den
 großen Internetsuchmaschinenbetreibern initiiert wurde, um die Webseiten
 für (Such-)Maschinen mittels Linked Data besser verstehbar zu machen. Einige
 ViFas haben schon begonnen, Schema.org in ihre Portale zu integrieren,
 z.B. [http://edoc.vifapol.de](http://edoc.vifapol.de). [Econstor](http://linkeddata.econstor.eu/),
 ein Dokumentenserver der ViFas,
-bietet aus diesem Grund schon seit geraumer Zeit Linked Data an.] Deshalb zeigt
-dieser Artikel, dass, eine
-LOD-basierte Metadateninfrastruktur, die den WorldCat und ExLibris' Alma
-durchaus ergänzt und integriert, in die Lösung der an die FIDs
-gestellten Aufgaben passt.
+bietet aus diesem Grund schon seit geraumer Zeit Linked Data an.] 
+
+Dementsprechend würde der Aufbau einer LOD-basierten Metadateninfrastruktur
+durchaus bisherigen Weichenstellungen der DFG und die Nutzung von Plattformen wie OCLCs
+WorldShare und ExLibris' Alma ergänzen udn könnte dabei viel zur die Lösung der an die FIDs
+gestellten Aufgaben beitragen.
 
 ##<a name="referenzen"></a>Referenzen
 
 Berners-Lee, Tim (2009): On the next web. URL:
 [http://www.ted.com/talks/tim\_berners\_lee\_on\_the\_next\_web.html](http://www.ted.com/talks/tim_berners_lee_on_the\_next_web.html).
 
-Berners-Lee, Tim; Fischetti, Mark (1999): Weaving the Web. The Original Design
-and Ultimate Destiny of the World Wide Web by Its Inventor. HarperSanFrancisco.
-ISBN 978-0-06-251587-2.
-
 Christof, Jürgen; Wonke-Stehle, Jens (2012): 101. Bibliothekartag 2012.
 Virtuelle Fachbibliotheken - Bilanz und Ausblick . URL:
 [http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick](http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick).
 
 Christoph, Pascal (2013): Datenanreicherung auf LOD-Basis. In: (Open) Linked
-Data in Bibliotheken S. 139-167. ISBN: 978-3-11-027634-3. URL:
+Data in Bibliotheken S. 139-167. URL:
 [http://www.dr0i.de/lib/pages/Datenanreicherung\_auf\_LOD\_Basis.html](http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html).
+
+Danowski, Patrick / Pohl, Adrian (Hg.) (2013): (Open) Linked Data in
+Bibliotheken. Walter de Gruyter GmbH, Berlin/Boston. URL:
+[http://dx.doi.org/10.1515/9783110278736](http://dx.doi.org/10.1515/9783110278736).
 
 Depping, Ralf (2012): 101. Bibliothekartag 2012 . Sondersammelgebiete im
 elektronischen Zeitalter. URL:
 [http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter](http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter).
 
-DFG (2013): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
+DFG (2013a): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
 Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März
 2013. URL:
 [http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html).
-DFG (2013): Fachinformationsdienste für die Wissenschaft. Richtlinien für das
+
+DFG (2013b): Fachinformationsdienste für die Wissenschaft. Richtlinien für das
 DFG geförderte System der Fachinformationsdienste für die Wissenschaft.
 DFG-Vordruck 12.102 - 03/13. URL:
 [http://www.dfg.de/formulare/12\_102/12\_102\_de.pdf](http://www.dfg.de/formulare/12_102/12_102_de.pdf).
@@ -894,7 +875,7 @@ DINI AG KIM (2013): Empfehlung für die RDF-Repräsentation bibliografischer
 Daten (Textressourcen). URL:
 [https://wiki.dnb.de/x/cYMOB](https://wiki.dnb.de/x/cYMOB).
 
-DINI AG KIM (2013): LOD-Glossar. URL:
+DINI AG KIM (2013): Glossar. URL:
 [http://git.io/2CPrvQ](http://git.io/2CPrvQ).
 
 Diverse (2013): Massively-Multiplayer\_Online\_Bibliography.
@@ -919,6 +900,10 @@ Nordrhein-Westfalen. URL:
 Pohl, Adrian (2013): Mit der DFG und CIB nach WorldShare und Alma. URL:
 [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html)
 
+Pohl, Adrian / Danowski, Patrick (2013): Linked Open Data in der
+Bibliothekswelt: Grundlagen und Überblick. In: Dies. (Hg.) (2013): (Open)
+Linked Data in·Bibliotheken, Berlin/Boston, S.1-44.
+
 Tochtermann, Klaus (2013): 10 Thesen zum zukünftigen Profil von
 wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler
 Bedeutung. URL:
@@ -927,6 +912,3 @@ Bedeutung. URL:
 Weaver, Jesse; Tarjan, Paul (2012): Facebook Linked Data via the Graph API.
 [http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api](http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api)
 
-Wissenschaftsrat (2011): Übergreifende Empfehlungen zu
-Informationsinfrastrukturen. URL:
-[http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf](http://www.wissenschaftsrat.de/download/archiv/10466-11.pdf)
