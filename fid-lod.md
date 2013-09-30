@@ -77,7 +77,7 @@ Inhaltsverzeichnis
 
 Die ["Richtlinien für das DFG geförderte System der Fachinformationsdienste für
 die Wissenschaft"](http://www.dfg.de/formulare/12_102/12_102_de.pdf)^[DFG
-(2013): Fachinformationsdienste für die Wissenschaft. Richtlinien für das DFG
+(2013b): Fachinformationsdienste für die Wissenschaft. Richtlinien für das DFG
 geförderte System der Fachinformationsdienste für die Wissenschaft.
 DFG-Vordruck 12.102 - 03/13. URL:
 [http://www.dfg.de/formulare/12_102/12_102_de.pdf](http://www.dfg.de/formulare/12_102/12_102_de.pdf).] der Deutschen
@@ -197,7 +197,7 @@ diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsenta
 von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS
 sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."^[DINI-AG-KIM (2013): Glossar.
+Vokabularen/Ontologien."^[DINI-AG-KIM (2013b): Glossar.
 URL:[http://git.io/YWNx8w](http://git.io/YWNx8w)]
 
 Dieser Text wird die genannten Linked-Data-Technologien nicht näher erläutern. Für
@@ -870,11 +870,11 @@ DFG geförderte System der Fachinformationsdienste für die Wissenschaft.
 DFG-Vordruck 12.102 - 03/13. URL:
 [http://www.dfg.de/formulare/12\_102/12\_102\_de.pdf](http://www.dfg.de/formulare/12_102/12_102_de.pdf).
 
-DINI AG KIM (2013): Empfehlung für die RDF-Repräsentation bibliografischer
+DINI AG KIM (2013a): Empfehlung für die RDF-Repräsentation bibliografischer
 Daten (Textressourcen). URL:
 [https://wiki.dnb.de/x/cYMOB](https://wiki.dnb.de/x/cYMOB).
 
-DINI AG KIM (2013): Glossar. URL:
+DINI AG KIM (2013b): Glossar. URL:
 [http://git.io/2CPrvQ](http://git.io/2CPrvQ).
 
 Diverse (2013): Massively-Multiplayer\_Online\_Bibliography.
