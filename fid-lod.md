@@ -197,7 +197,7 @@ diese durch das Datenmodell RDF (Resource Description Framework) zur Repräsenta
 von Information,
 SPARQL (SPARQL Protocol And RDF Query Language)zu Abfrage von RDF-Daten und RDFS
 sowie OWL (Web Ontology Language) zur Schaffung von
-Vokabularen/Ontologien."^[DINI-AG-KIM (2013b): Glossar.
+Vokabularen/Ontologien."^[DINI AG KIM (2013b): Glossar.
 URL:[http://git.io/YWNx8w](http://git.io/YWNx8w)]
 
 Dieser Text wird die genannten Linked-Data-Technologien nicht näher erläutern. Für
@@ -844,10 +844,6 @@ gestellten Aufgaben beitragen.
 Berners-Lee, Tim (2009): On the next web. URL:
 [http://www.ted.com/talks/tim\_berners\_lee\_on\_the\_next\_web.html](http://www.ted.com/talks/tim_berners_lee_on_the\_next_web.html).
 
-Christof, Jürgen; Wonke-Stehle, Jens (2012): 101. Bibliothekartag 2012.
-Virtuelle Fachbibliotheken - Bilanz und Ausblick . URL:
-[http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick](http://www.slideshare.net/jensws/virtuelle-fachbibliotheken-bilanz-und-ausblick).
-
 Christoph, Pascal (2013): Datenanreicherung auf LOD-Basis. In: (Open) Linked
 Data in Bibliotheken S. 139-167. URL:
 [http://www.dr0i.de/lib/pages/Datenanreicherung\_auf\_LOD\_Basis.html](http://www.dr0i.de/lib/pages/Datenanreicherung_auf_LOD_Basis.html).
@@ -855,10 +851,6 @@ Data in Bibliotheken S. 139-167. URL:
 Danowski, Patrick / Pohl, Adrian (Hg.) (2013): (Open) Linked Data in
 Bibliotheken. Walter de Gruyter GmbH, Berlin/Boston. URL:
 [http://dx.doi.org/10.1515/9783110278736](http://dx.doi.org/10.1515/9783110278736).
-
-Depping, Ralf (2012): 101. Bibliothekartag 2012 . Sondersammelgebiete im
-elektronischen Zeitalter. URL:
-[http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter](http://www.slideshare.net/vascoda/sondersammelgebiete-im-elektronischen-zeitalter).
 
 DFG (2013a): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
 Informationsservices. In: Information für die Wissenschaft Nr. 11 | 15. März
@@ -886,7 +878,7 @@ URL:
 
 Graf, Klaus (2013): Schlechte Bücher? Publikationsmöglichkeiten im 21.
 Jahrhundert als Herausforderung für Bibliotheken
-[http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/)
+[http://archiv.twoday.net/stories/472713645/](http://archiv.twoday.net/stories/472713645/).
 
 Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open Data . URL:
 [http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/](http://openbiblio.net/2011/08/11/ex-libris-alma-and-open-data/).
@@ -894,10 +886,10 @@ Grant, Carl / Pohl, Adrian (2011): Ex Libris, Alma and Open Data . URL:
 Kreutzer, Till (2011): Open Data – Freigabe von Daten aus Bibliothekskatalogen.
 Ein Leitfaden. Hg. v. Hochschulbibliothekszentrum des Landes
 Nordrhein-Westfalen. URL:
-[http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf](http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf)
+[http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf](http://www.hbz-nrw.de/dokumentencenter/veroeffentlichungen/open-data-leitfaden.pdf).
 
 Pohl, Adrian (2013): Mit der DFG und CIB nach WorldShare und Alma. URL:
-[http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html)
+[http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html).
 
 Pohl, Adrian / Danowski, Patrick (2013): Linked Open Data in der
 Bibliothekswelt: Grundlagen und Überblick. In: Dies. (Hg.) (2013): (Open)
@@ -907,7 +899,3 @@ Tochtermann, Klaus (2013): 10 Thesen zum zukünftigen Profil von
 wissenschaftlichen Informations-Infrastruktureinrichtungen mit überregionaler
 Bedeutung. URL:
 [http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/](http://www.zbw-mediatalk.eu/2013/08/klaus-tochtermann-zehn-thesen-zum-zukunftigen-profil-von-wissenschaftlichen-informationsinfrastruktureinrichtungen-mit-uberregionaler-bedeutung/).
-
-Weaver, Jesse; Tarjan, Paul (2012): Facebook Linked Data via the Graph API.
-[http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api](http://www.semantic-web-journal.net/content/facebook-linked-data-graph-api)
-
