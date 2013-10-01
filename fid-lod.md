@@ -489,7 +489,7 @@ Konkrete Technologien spielen beim Aufbau eines solchen Systems eine
 untergeordnete Rolle, sie können seine Entstehung allenfalls
 unterstützen.  Wichtiger sind bestimmte Formen der Zusammenarbeit, der Kommunikation,
 des Teilens von Erfahrungen und Wissen. Als
-pointierte Darstellung der wichtigen Aspekte sei an dieser Stelle der im
+pointierte Darstellung der wichtigsten Aspekte sei an dieser Stelle der im
 Linked-Open-Data-Bereich des hbz entstandene
 Entwurf eines Manifests zitiert, das der Beförderung
 einer entsprechenden kollaborativen Arbeitsweise für den Aufbau einer 
