@@ -383,12 +383,14 @@ von vascoda nämlich von vornherein ausgeschlossen.
 Einige konkrete Probleme, die sich durch einen LOD-Einsatz vermeiden lassen, 
 seien im Folgenden genannt.
 
-Oftmals wurde vascoda als bloße Backlink-Maschine zu den jeweils
-eigenen Portalen gesehen, d. h. viele wichtige Metadaten (u. a. Bestandsdaten)
-wurden vascoda vorenthalten, sodass die an Bestandsnachweisen interessierte Benutzerin
+Vascoda wurde als bloße Backlink-Maschine zu den jeweils
+eigenen Portalen konzipiert, d. h. viele wichtige Metadaten (u. a. Bestandsdaten)
+waren in vascoda gar nicht drin, sodass die an Bestandsnachweisen interessierte Benutzerin
 gezwungen war, in das jeweilige fachspezifische Portal zu wechseln.
 Solche unnötigen Portalbrüche werden aber als verwirrend und bestenfalls als
-umständlich empfunden. Ebenso durften teilweise Schlagwörter zwar in
+umständlich empfunden - zumal, wenn das vascoda Portal so beworben wurde, als
+ob der Zugriff auf die Ressourcen direkt möglich gewesen wäre. Ebenso durften teilweise
+Schlagwörter zwar in
 vascoda indexiert und also gesucht, nicht aber zur Anzeige gebracht
 werden. Benutzer, die die eingegebenen Suchwörter nicht auch in der
 Trefferliste wiederfinden, begegnen den Ergebnissen eher skeptisch,
