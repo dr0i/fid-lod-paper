@@ -489,8 +489,8 @@ Konkrete Technologien spielen beim Aufbau eines solchen Systems eine
 untergeordnete Rolle, sie können seine Entstehung allenfalls
 unterstützen.  Wichtiger sind bestimmte Formen der Zusammenarbeit, der Kommunikation,
 des Teilens von Erfahrungen und Wissen. Als
-pointierte Darstellung der wichtigen Aspekte sei an dieser Stelle der im
-Linked-Open-Data-Breich des hbz entstandene
+pointierte Darstellung der wichtigsten Aspekte sei an dieser Stelle der im
+Linked-Open-Data-Bereich des hbz entstandene
 Entwurf eines Manifests zitiert, das der Beförderung
 einer entsprechenden kollaborativen Arbeitsweise für den Aufbau einer 
 zukunftsfähigen, innovativen und durch öffentliche Einrichtungen
@@ -805,9 +805,7 @@ Investition in eigenentwickelte Gemeinschaftslösungen für eine
 Informationsinfrastruktur als kritisch für einen
 späteren nachhaltigen Betrieb gesehen hat und stattdessen eher kommerzielle und
 proprietäre Lösungen bevorzugte.^[Vgl. Pohl, Adrian (2013): Mit der DFG
-und CIB nach WorldShare und Alma. URL: [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html).]
-
-Zwar unterstützt die DFG lediglich [die Migration der Verbünde in
+und CIB nach WorldShare und Alma. URL: [http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html](http://www.uebertext.org/2013/04/mit-der-dfg-und-cib-nach-wordshare-und.html).] Zwar unterstützt die DFG lediglich [die Migration der Verbünde in
 vorhandene proprietäre Datenbanken wie OCLCs WorldShare und ExLibris'
 Alma](http://dfg.de/foerderung/info_wissenschaft/archiv/2013/info_wissenschaft_13_11/index.html)^[Siehe
 DFG (2013a): DFG bewilligt drei Projekte zur Neuausrichtung überregionaler
@@ -836,7 +834,7 @@ bietet aus diesem Grund schon seit geraumer Zeit Linked Data an.]
 
 Dementsprechend würde der Aufbau einer LOD-basierten Metadateninfrastruktur
 durchaus bisherigen Weichenstellungen der DFG und die Nutzung von Plattformen wie OCLCs
-WorldShare und ExLibris' Alma ergänzen udn könnte dabei viel zur die Lösung der an die FIDs
+WorldShare und ExLibris' Alma ergänzen und könnte dabei viel zur die Lösung der an die FIDs
 gestellten Aufgaben beitragen.
 
 ##<a name="referenzen"></a>Referenzen
